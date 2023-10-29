@@ -12,7 +12,7 @@ import {
 } from './types';
 import { Icons } from './utils';
 
-export const TITLE_SUFFIX = 'Slick template with Svelte';
+export const TITLE_SUFFIX = 'Manoj\'s Portfolio';
 
 export const NavBar = {
 	home: 'Home',
@@ -43,35 +43,27 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 
 export const HOME: HomePageParams = {
 	title: 'Home',
-	name: 'Name',
-	lastName: 'LASTNAME',
+	name: 'Manoj',
+	lastName: 'Elango',
 	description:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!',
+		" I am a junior studying computer engineering at UC Davis. I work as an embedded systems engineer and am passionate about coding and building interesting projects. I'm excited about new technologies and software and spend my free time working on projects and hitting the gym.",
 	links: [
-		{ platform: Platform.GitHub, link: 'https://github.com/' },
+		{ platform: Platform.GitHub, link: 'https://github.com/ManojBaasha' },
 		{
 			platform: Platform.Linkedin,
-			link: 'https://www.linkedin.com/'
+			link: 'https://www.linkedin.com/in/manojelango/'
 		},
 		{
 			platform: Platform.Twitter,
 			link: 'https://twitter.com/'
 		},
 		{
-			platform: Platform.StackOverflow,
-			link: 'https://stackoverflow.com/'
-		},
-		{
 			platform: Platform.Email,
-			link: 'riadh-adrani@hotmail.fr'
-		},
-		{
-			platform: Platform.Youtube,
-			link: 'https://www.youtube.com'
+			link: 'melango@ucdavis.edu'
 		},
 		{
 			platform: Platform.Facebook,
-			link: 'https://www.facebook.com'
+			link: 'https://www.facebook.com/manoj.elango.10'
 		}
 	]
 };
@@ -93,7 +85,7 @@ export const SKILLS: SkillsPageParams = {
 
 export const RESUME: ResumePageParams = {
 	title: 'Resumé',
-	item: ''
+	item: 'https://docs.google.com/document/d/1sVUSqEDS3ErBbDexqyKRWLj-yd6uxbyzHN3c408fckM/edit?usp=sharing'
 };
 
 export const SEARCH: SearchPageParams = {
