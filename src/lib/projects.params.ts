@@ -4,20 +4,20 @@ import type { Project } from './types';
 
 const MY_PROJECTS: Array<Project> = [
 	{
-		slug: 'slick-portfolio-angular',
+		slug: 'education-mobile-app',
 		color: '#5e95e3',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+			"I developed an educational mobile app using Flutter and Dart, designed to assist 12th-grade students in accessing their study materials effortlessly. This app played a crucial role in mitigating the impact of the COVID-19 pandemic, providing students with easy access to notes and documents. With over 50 downloads, it has made a positive impact on remote learning.",
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
+			"Created an educational mobile app individually to help 12th grade students to access notes and documents easily which helped in mitigating the effects of COVID-19 pandemic",
+		links: [{ to: "https://github.com/ManojBaasha/1-Mark-Mastery", label: 'GitHub' }, {to: "https://play.google.com/store/apps/details?id=com.manojelango.onemarkmastery&hl=en_US&gl=US", label: "Play Store"}],
+		logo: Assets.Flutter,
+		name: '1 Mark Mastery',
 		period: {
 			from: new Date()
 		},
 		skills: getSkills('angular', 'ts', 'tailwind'),
-		type: 'Website Template'
+		type: 'Educational App'
 	},
 	{
 		slug: 'slick-portfolio-svelte',
