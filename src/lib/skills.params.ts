@@ -59,7 +59,7 @@ const MY_SKILLS = [
 	s({
 		slug: 'svelte',
 		color: 'orange',
-		description: "",
+		description: '',
 		logo: Assets.Svelte,
 		name: 'Svelte'
 	}),
@@ -228,7 +228,7 @@ const MY_SKILLS = [
 			'Vite is a front-end build tool that is fast and efficient. It is often used with frameworks like Vue.js and React.',
 		logo: Assets.Vite,
 		name: 'Vite'
-	}),
+	})
 ];
 
 export default MY_SKILLS;

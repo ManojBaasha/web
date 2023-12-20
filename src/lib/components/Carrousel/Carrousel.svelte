@@ -22,43 +22,43 @@
 			logo: codingcat
 		},
 		{
-			name: "Me with music",
+			name: 'Me with music',
 			logo: ghostpfp
 		},
 		{
-			name: "Me at 3am",
+			name: 'Me at 3am',
 			logo: emotionstick
 		},
 		{
-			name: "Me when you sleep",
+			name: 'Me when you sleep',
 			logo: gncat
 		},
 		{
-			name: "Me when you text @not_jonam",
+			name: 'Me when you text @not_jonam',
 			logo: happystick
 		},
 		{
-			name: "Me at the gym",
+			name: 'Me at the gym',
 			logo: gymcat
 		},
 		{
-			name: "Me asf",
+			name: 'Me asf',
 			logo: manoj
 		},
 		{
-			name: "Me with 300mg Caffeine",
+			name: 'Me with 300mg Caffeine',
 			logo: whatpepe
 		},
 		{
-			name: "Me when theres drama",
+			name: 'Me when theres drama',
 			logo: risitaspopcorn
 		},
 		{
-			name: "Me when im delulu",
+			name: 'Me when im delulu',
 			logo: clownpepe
 		},
 		{
-			name: "Me during the day",
+			name: 'Me during the day',
 			logo: sadcatok
 		}
 	];
@@ -136,6 +136,4 @@
 			</div>
 		{/each}
 	</div>
-
-
 </div>

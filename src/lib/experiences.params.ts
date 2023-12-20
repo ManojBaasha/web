@@ -1,9 +1,9 @@
 import Assets from './data/assets';
 import { getSkills } from './skills.params';
 import { ContractType, type Experience } from './types';
-import ravata from "./assets/ravata.png";
-import ucdavis from "./assets/ucdavis.png";
-import gdsc from "./assets/gdsc.png"
+import ravata from './assets/ravata.png';
+import ucdavis from './assets/ucdavis.png';
+import gdsc from './assets/gdsc.png';
 
 const MY_EXPERIENCES: Array<Experience> = [
 	{
@@ -22,7 +22,9 @@ const MY_EXPERIENCES: Array<Experience> = [
 		skills: getSkills('python', 'c', 'cpp', 'csharp'),
 		name: 'Jr. Embedded Systems Engineer',
 		color: '#0000ff',
-		links: [{ to: 'https://www.linkedin.com/company/ravata/', label: 'Ravata Solutions', newTab: true}],
+		links: [
+			{ to: 'https://www.linkedin.com/company/ravata/', label: 'Ravata Solutions', newTab: true }
+		],
 		logo: ravata,
 		shortDescription: 'Ravata Solutions | Startup'
 	},
@@ -41,7 +43,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		contract: ContractType.Internship,
 		type: 'Human-Chatbot Interaction Pipeline Project',
 		location: 'Davis, CA',
-		period: { from: new Date(2023, 0 , 1), to: new Date(2023, 9, 1) },
+		period: { from: new Date(2023, 0, 1), to: new Date(2023, 9, 1) },
 		skills: getSkills('js', 'css', 'html', 'reactjs', 'firebase'),
 		name: 'Researcher',
 		color: '#ffff00',
@@ -70,7 +72,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		color: '#ff0000',
 		links: [],
 		logo: gdsc,
-		shortDescription: ''
+		shortDescription: 'Creating Workshops, Hosting Events and Technical Mentorship'
 	},
 	{
 		slug: 'orientation-leader',
@@ -85,14 +87,14 @@ const MY_EXPERIENCES: Array<Experience> = [
 		contract: ContractType.Contract,
 		type: 'Orientation Leader',
 		location: 'Davis, CA',
-		period: { from: new Date(2022, 9, 1)},
+		period: { from: new Date(2022, 9, 1) },
 		skills: getSkills(''),
 		name: 'Orientation Leader',
 		color: '#a52a2a',
 		links: [],
 		logo: ucdavis,
-		shortDescription: 'Guiding Freshman and Transfer Student every summer'
-	},
+		shortDescription: 'Guiding Freshman and Transfer Student every summer around the campus'
+	}
 ];
 
 export default MY_EXPERIENCES;

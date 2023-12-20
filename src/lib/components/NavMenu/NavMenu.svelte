@@ -21,7 +21,7 @@
 		{ title: NavBar.personal, to: '/projects', icon: 'i-carbon-cube' },
 		{ title: NavBar.career, to: '/experience', icon: 'i-carbon-development' },
 		{ title: NavBar.resume, to: '/resume', icon: 'i-carbon-result' },
-    { title: "Blog", to:"https://manojbaasha.github.io/blog/blog/", icon: "" }
+		{ title: 'Blog', to: 'https://manojbaasha.github.io/blog/blog/', icon: '' }
 	];
 </script>
 

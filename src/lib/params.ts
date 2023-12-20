@@ -12,7 +12,7 @@ import {
 } from './types';
 import { Icons } from './utils';
 
-export const TITLE_SUFFIX = 'Manoj\'s Portfolio';
+export const TITLE_SUFFIX = "Manoj's Portfolio";
 
 export const NavBar = {
 	home: 'Home',
@@ -55,7 +55,7 @@ export const HOME: HomePageParams = {
 		},
 		{
 			platform: Platform.Twitter,
-			link: 'https://twitter.com/'
+			link: 'https://www.instagram.com/not_jonam/'
 		},
 		{
 			platform: Platform.Email,
