@@ -20,7 +20,7 @@ const MY_SKILLS = [
 		slug: 'ts',
 		color: 'blue',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'Not very good with typescript. Never built any code in Typescript, only modified existing Typescript code from open source templates.',
 		logo: Assets.TypeScript,
 		name: 'Typescript'
 	}),
@@ -28,7 +28,7 @@ const MY_SKILLS = [
 		slug: 'css',
 		color: 'blue',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'Can\'t live without it',
 		logo: Assets.CSS,
 		name: 'CSS'
 	}),
@@ -36,7 +36,7 @@ const MY_SKILLS = [
 		slug: 'html',
 		color: 'orange',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'HTML and CSS are like the crafting table and a furnace. I\'ve always used them as long as I can remember',
 		logo: Assets.HTML,
 		name: 'HTML'
 	}),
@@ -44,7 +44,7 @@ const MY_SKILLS = [
 		slug: 'sass',
 		color: 'pink',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'Never ever touched it but im pretty sure its exactly like css',
 		logo: Assets.Sass,
 		name: 'Sass'
 	}),
@@ -52,14 +52,14 @@ const MY_SKILLS = [
 		slug: 'reactjs',
 		color: 'cyan',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'Experienced in ReactJs. Most of my projects are reactjs',
 		logo: Assets.ReactJs,
 		name: 'React Js'
 	}),
 	s({
 		slug: 'svelte',
 		color: 'orange',
-		description: '',
+		description: 'This is the first website I\'ve used Svelte in and not very experienced in it yet. (I am strongly considering Svelte more than ReactJs for my upcoming websites)',
 		logo: Assets.Svelte,
 		name: 'Svelte'
 	}),
@@ -67,7 +67,7 @@ const MY_SKILLS = [
 		slug: 'python',
 		color: 'green',
 		description:
-			'Python is a versatile and high-level programming language known for its readability and simplicity. It is widely used in web development, data analysis, artificial intelligence, and more.',
+			'Never lived a day without python. My most used language',
 		logo: Assets.Python,
 		name: 'Python'
 	}),
@@ -76,7 +76,7 @@ const MY_SKILLS = [
 		slug: 'c',
 		color: 'gray',
 		description:
-			'C is a powerful and widely used procedural programming language. It is commonly used for system programming, embedded systems, and game development.',
+			'Used it to code for embedded systems. (The very low language with too pointers and memory allocation kind-of C.',
 		logo: Assets.C,
 		name: 'C'
 	}),
@@ -85,7 +85,7 @@ const MY_SKILLS = [
 		slug: 'cpp',
 		color: 'darkblue',
 		description:
-			'C++ is an extension of the C programming language with additional features like object-oriented programming. It is widely used in game development, system programming, and software engineering.',
+			'Most my college courses were in C++. Familiar with C++ more than C (which is a good thing coz C++ is waay harder)',
 		logo: Assets.Cpp,
 		name: 'C++'
 	}),
@@ -94,7 +94,7 @@ const MY_SKILLS = [
 		slug: 'flutter',
 		color: 'blue',
 		description:
-			'Flutter is an open-source UI software development toolkit created by Google. It is used for building natively compiled applications for mobile, web, and desktop from a single codebase.',
+			'Only made one Mobile App in high school and never touched this language ever again.',
 		logo: Assets.Flutter,
 		name: 'Flutter'
 	}),
@@ -103,7 +103,7 @@ const MY_SKILLS = [
 		slug: 'dart',
 		color: 'blue',
 		description:
-			'Dart is a programming language optimized for building mobile, desktop, server, and web applications. It is often used with the Flutter framework for cross-platform development.',
+			'Used Dart with flutter in high school and never touched it ever again',
 		logo: Assets.Dart,
 		name: 'Dart'
 	}),
@@ -112,7 +112,7 @@ const MY_SKILLS = [
 		slug: 'lua',
 		color: 'green',
 		description:
-			'Lua is a lightweight, high-level scripting language designed for embedded systems and game development. It is known for its simplicity and flexibility.',
+			'Made games with Lua in Pico 8. Also learnt basic Lua to customise my Neovim plugins',
 		logo: Assets.Unknown,
 		name: 'Lua'
 	}),
@@ -121,7 +121,7 @@ const MY_SKILLS = [
 		slug: 'reactnative',
 		color: 'blue',
 		description:
-			'React Native is a framework for building mobile applications using React and JavaScript. It allows developers to create cross-platform apps with a single codebase.',
+			'Just started using reactnative in 2023. So much more to learn from it',
 		logo: Assets.Unknown,
 		name: 'React Native'
 	}),
@@ -130,7 +130,7 @@ const MY_SKILLS = [
 		slug: 'csharp',
 		color: 'purple',
 		description:
-			'C# (C-sharp) is a modern, object-oriented programming language developed by Microsoft. It is widely used for building Windows applications, web applications, and games using the Unity game engine.',
+			'Created a snake game in Unity using C# when i had an interest in Game Developement. Building Desktop Applications in Visual Studio in WindowsForms using C#',
 		logo: Assets.Csharp,
 		name: 'Csharp'
 	}),
@@ -139,7 +139,7 @@ const MY_SKILLS = [
 		slug: 'bootstrap',
 		color: 'purple',
 		description:
-			'Bootstrap is a popular front-end framework for building responsive and mobile-first web projects.',
+			'Worked with bootstrap only in open source templates. Never built anything directly with it myself',
 		logo: Assets.Bootstrap,
 		name: 'Bootstrap'
 	}),
@@ -147,7 +147,7 @@ const MY_SKILLS = [
 		slug: 'flask',
 		color: 'black',
 		description:
-			'Flask is a lightweight web application framework for Python. It is easy to use and flexible.',
+			'Learnt and implemented it in a hackathon with my team and never touched the language after.',
 		logo: Assets.Flask,
 		name: 'Flask'
 	}),
@@ -161,7 +161,7 @@ const MY_SKILLS = [
 	s({
 		slug: 'pandas',
 		color: 'blue',
-		description: 'Pandas is a data manipulation and analysis library for Python.',
+		description: 'Build basic preprocessed data in pandas for machine learning but never implemented a complete project out of it',
 		logo: Assets.Pandas,
 		name: 'Pandas'
 	}),
@@ -169,7 +169,7 @@ const MY_SKILLS = [
 		slug: 'vuejs',
 		color: 'green',
 		description:
-			'Vue.js is a progressive JavaScript framework for building user interfaces. It is known for its simplicity and flexibility.',
+			'I cant tell which javascript framework I use when i copy paste code so Im not exactly sure if I\'ve used this or not. ¯\_(ツ)_/¯',
 		logo: Assets.VueJs,
 		name: 'Vue.js'
 	}),
@@ -177,7 +177,7 @@ const MY_SKILLS = [
 		slug: 'kotlin',
 		color: 'orange',
 		description:
-			'Kotlin is a modern, concise, and expressive programming language developed by JetBrains. It is often used for Android app development.',
+			'Soon..',
 		logo: Assets.Kotlin,
 		name: 'Kotlin'
 	}),
@@ -185,7 +185,7 @@ const MY_SKILLS = [
 		slug: 'nodejs',
 		color: 'green',
 		description:
-			"Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It is commonly used for server-side scripting and building scalable network applications.",
+			"9/10 times my backened is in NodeJs and not Flask",
 		logo: Assets.NodeJs,
 		name: 'Node.js'
 	}),
@@ -193,7 +193,7 @@ const MY_SKILLS = [
 		slug: 'expressjs',
 		color: 'black',
 		description:
-			'Express.js is a minimalist web application framework for Node.js. It simplifies the process of building web applications and APIs.',
+			'Can\'t tell express js apart from nodeJs they\'re literally the same thing. Also used it combined with Socket.io to keep a stable connection for chat applications.',
 		logo: Assets.ExpressJs,
 		name: 'Express.js'
 	}),
@@ -201,7 +201,7 @@ const MY_SKILLS = [
 		slug: 'firebase',
 		color: 'yellow',
 		description:
-			'Firebase is a platform developed by Google for creating mobile and web applications. It provides a variety of services, including hosting, authentication, and real-time database.',
+			'Free Hosting + Free DataBase + Free Read/Write so most my projects end up here.',
 		logo: Assets.Firebase,
 		name: 'Firebase'
 	}),
@@ -209,7 +209,7 @@ const MY_SKILLS = [
 		slug: 'mongodb',
 		color: 'green',
 		description:
-			'MongoDB is a NoSQL database that provides high performance, high availability, and easy scalability. It is commonly used for handling large amounts of data.',
+			'Only used it coz I was curious if it was better than firebase but nope Firebase is waay more convenient (atleast for a beginner like me)',
 		logo: Assets.MongoDB,
 		name: 'MongoDB'
 	}),
@@ -217,7 +217,7 @@ const MY_SKILLS = [
 		slug: 'tailwind',
 		color: 'blue',
 		description:
-			'Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build designs directly in your markup.',
+			'Havent implemented tailwind myself but definitely copied a whole lot of buttons and cards which that were made in Tailwind to add to my websites.',
 		logo: Assets.Tailwind,
 		name: 'Tailwind CSS'
 	}),
@@ -225,7 +225,7 @@ const MY_SKILLS = [
 		slug: 'vite',
 		color: 'blue',
 		description:
-			'Vite is a front-end build tool that is fast and efficient. It is often used with frameworks like Vue.js and React.',
+			'Exploring Vite through Svelte and ReactJs Codebase',
 		logo: Assets.Vite,
 		name: 'Vite'
 	})
