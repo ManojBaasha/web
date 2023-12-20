@@ -19,7 +19,8 @@ export const NavBar = {
 	personal: 'Projects',
 	career: 'Experiences',
 	resume: 'Resume',
-	skills: 'Skills'
+	skills: 'Skills',
+	blog: "Blog"
 };
 
 export const getPlatfromIcon = (platform: Platform): Icons => {
