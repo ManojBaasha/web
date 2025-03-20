@@ -1,7 +1,8 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
-const base = '/web';
+// Remove the base path since we're deploying to the root of a custom domain
+// const base = '/web';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -15,10 +16,11 @@ const config = {
 	},
 
 	kit: {
-		adapter: adapter({ fallback: '404.html' }),
-		paths: {
-			base: base
-		}
+		adapter: adapter({ fallback: '404.html' })
+		// Remove the paths configuration since we're deploying to the root
+		// paths: {
+		//	base: base
+		// }
 	}
 };
 
