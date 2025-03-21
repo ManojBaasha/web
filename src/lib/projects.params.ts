@@ -8,6 +8,8 @@ import crypgologo from './assets/crypgologo.png';
 import discord from './assets/discord.png';
 import ai from './assets/ai.png';
 import skull from './assets/skull.png';
+import chatasap from './assets/chatasap.png';
+import khao from './assets/khao.png';
 
 const MY_PROJECTS: Array<Project> = [
 	{
@@ -131,7 +133,7 @@ const MY_PROJECTS: Array<Project> = [
 		shortDescription:
 			'Anonymous chat app developed using Swift and Firebase for real-time messaging.',
 		links: [],
-		logo: '',
+		logo: chatasap,
 		name: 'ChatASAP',
 		period: {
 			from: new Date(2022, 6, 1)
@@ -146,7 +148,7 @@ const MY_PROJECTS: Array<Project> = [
 		shortDescription:
 			'Web app using OCR and OpenAI API to suggest recipes based on grocery receipts.',
 		links: [],
-		logo: '',
+		logo: khao,
 		name: 'KHAO',
 		period: {
 			from: new Date(2023, 1, 1)
