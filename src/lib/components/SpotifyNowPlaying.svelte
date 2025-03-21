@@ -13,13 +13,94 @@
 
   let loading = true;
 
+  // For GitHub Pages static hosting, we use a direct approach instead of server API
+  // This approach requires adding your Spotify token directly in the deployed HTML
+  // For production, consider using Netlify or Vercel with serverless functions instead
+  
+  // Spotify credentials
+  const SPOTIFY_CLIENT_ID = 'abf520667aa04c7d9083af6f4ff467ff';
+  const SPOTIFY_CLIENT_SECRET = '5e48dc1d06dc401784b24ee038d0d39c';
+  const SPOTIFY_REFRESH_TOKEN = 'AQAu2trLbZGOm6_o9kTBJuNuj_FLLVLprsqbtWe2V5yQ3z4z_LrfA8d4pkTzB_7hz2AGy4YJDW6k6uBOUfQm_c52y24WXy70pIc28z4sYZ4u0picwExuuoFyzVwGH8zYAYU';
+  
+  // Spotify endpoints
+  const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token';
+  const NOW_PLAYING_ENDPOINT = 'https://api.spotify.com/v1/me/player/currently-playing';
+  
+  // Use a CORS proxy to avoid CORS issues
+  const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
+  
+  // Get access token using refresh token
+  async function getAccessToken() {
+    const basicAuth = btoa(`${SPOTIFY_CLIENT_ID}:${SPOTIFY_CLIENT_SECRET}`);
+    
+    try {
+      const response = await fetch(`${CORS_PROXY}${TOKEN_ENDPOINT}`, {
+        method: 'POST',
+        headers: {
+          Authorization: `Basic ${basicAuth}`,
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Origin': 'https://therealmanoj.tech'
+        },
+        body: new URLSearchParams({
+          grant_type: 'refresh_token',
+          refresh_token: SPOTIFY_REFRESH_TOKEN,
+        }),
+      });
+      
+      return response.json();
+    } catch (error) {
+      console.error('Error getting access token:', error);
+      return { access_token: null };
+    }
+  }
+  
+  // Get currently playing track
   async function getNowPlaying() {
     try {
       loading = true;
-      const res = await fetch('/api/spotify');
-      song = await res.json();
+      
+      // First, get the access token
+      const { access_token } = await getAccessToken();
+      
+      if (!access_token) {
+        console.error('Failed to get access token');
+        song = { isPlaying: false };
+        return;
+      }
+      
+      // Then fetch the currently playing track
+      const response = await fetch(`${CORS_PROXY}${NOW_PLAYING_ENDPOINT}`, {
+        headers: {
+          Authorization: `Bearer ${access_token}`,
+          'Origin': 'https://therealmanoj.tech'
+        },
+      });
+      
+      // Handle no track playing
+      if (response.status === 204 || response.status > 400) {
+        song = { isPlaying: false };
+        return;
+      }
+      
+      const data = await response.json();
+      
+      // Handle no item
+      if (!data || !data.item) {
+        song = { isPlaying: false };
+        return;
+      }
+      
+      // Extract data
+      song = {
+        isPlaying: data.is_playing,
+        title: data.item.name,
+        artist: data.item.artists.map((artist: {name: string}) => artist.name).join(', '),
+        albumImageUrl: data.item.album.images[0]?.url,
+        songUrl: data.item.external_urls.spotify
+      };
     } catch (error) {
       console.error('Error fetching Spotify data:', error);
+      song = { isPlaying: false };
     } finally {
       loading = false;
     }
