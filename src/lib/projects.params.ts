@@ -14,9 +14,9 @@ const MY_PROJECTS: Array<Project> = [
 		slug: 'education-mobile-app',
 		color: '#00ffff',
 		description:
-			'I developed an educational mobile app using Flutter and Dart, designed to assist 12th-grade students in accessing their study materials effortlessly. This app played a crucial role in mitigating the impact of the COVID-19 pandemic, providing students with easy access to notes and documents. With over 50 downloads, it has made a positive impact on remote learning.',
+		"1 Mark Mastery is an educational mobile app developed using Flutter and Dart, designed to assist 12th-grade students in accessing their study materials effortlessly. The project was born out of a desire to mitigate the impact of the COVID-19 pandemic on students, ensuring that they had easy access to their notes and documents even in a remote learning environment. One of the major challenges was designing an intuitive and accessible UI, as many students using the app had minimal tech experience. Overcoming this by focusing on user-friendly design principles was a rewarding experience. Seeing the app gain over 50 downloads and help students navigate their studies reinforced my passion for mobile development and making technology more accessible.",
 		shortDescription:
-			'Created an educational mobile app individually to help 12th grade students to access notes and documents easily which helped in mitigating the effects of COVID-19 pandemic',
+			'Built an educational app to help 12th-grade students access study materials easily during the COVID-19 pandemic.',
 		links: [
 			{ to: 'https://github.com/ManojBaasha/1-Mark-Mastery', label: 'GitHub' },
 			{
@@ -46,23 +46,9 @@ const MY_PROJECTS: Array<Project> = [
 	{
 		slug: 'crypGo',
 		color: '#5e95e3',
-		description: `1. React Native Expo-based iOS App Development:
-			Led the development of CrypGo, a cutting-edge React Native Expo-based iOS application, designed to function as a secure and efficient wallet for blockchain transactions. The app incorporated key features, including the ability to submit, retrieve, update, and create transactions. My role as the project lead involved overseeing a talented team of 5 developers throughout a 13-week development cycle, ensuring a collaborative and results-driven environment. The use of React Native Expo provided a streamlined and cross-platform development experience, delivering a polished and user-friendly wallet application.
-			<br><br>
-			2. Seamless Integration with ResilientDB:
-			Established a direct connection to ResilientDB, an open-source Apache Certified fully distributed ledger system. As part of the organization behind ResilientDB, I played a pivotal role in integrating CrypGo with this robust and resilient blockchain infrastructure. This connection not only enhanced the security and reliability of blockchain transactions within the app but also showcased the project's alignment with industry-leading technologies and standards.
-			<br><br>
-			3. Technologies and Tools Utilized:
-			<br><br>
-			React Native Expo: Leveraged the power of React Native Expo to create a cross-platform iOS app with a focus on user experience and performance.
-			Postman: Ensured the seamless functionality of blockchain transactions by extensively testing and validating API interactions using Postman.
-			Strawberry GraphQL: Implemented GraphQL for efficient and flexible data querying, optimizing the communication between the app and the ResilientDB blockchain.
-			4. Active Involvement in the ResilientDB Organization:
-			Engaged proactively as a member of the ResilientDB organization, contributing to the advancement of a fully distributed ledger system. This involvement provided a unique opportunity to stay at the forefront of blockchain technology trends, collaborate with industry experts, and contribute to the evolution of resilient and secure decentralized systems.
-			<br><br>
-			The CrypGo project reflects my proficiency in React Native, expertise in blockchain technology, and the ability to lead and collaborate effectively in a team environment to deliver innovative and impactful solutions.`,
+		description: "CrypGo is an iOS app developed using React Native Expo that serves as a blockchain wallet, allowing users to securely submit, retrieve, update, and create transactions. This project was my introduction to integrating mobile applications with blockchain technology. Leading a team of five developers over 13 weeks was an incredible learning experience, involving sprint planning, debugging, and real-world problem-solving. The biggest challenge was ensuring seamless integration with ResilientDB, an open-source fully distributed ledger system. Learning GraphQL for efficient data querying was a steep curve, but it significantly improved my backend skills. The most enjoyable part was seeing everything come together—after weeks of debugging, finally getting a transaction to go through was a rewarding moment!", 
 		shortDescription:
-			'ReactNative Expo based Wallet Extension for the fully distributed ledger system ResilientDB',
+			'Blockchain wallet app built with React Native Expo, integrated with ResilientDB for secure transactions.',
 		links: [{ to: 'https://github.com/ResilientApp/CrypGo', label: 'GitHub' }],
 		logo: crypgologo,
 		name: 'CrypGo',
@@ -137,7 +123,67 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('cpp'),
 		type: 'Desktop Game'
-	}
+	},
+	{
+		slug: 'chatASAP',
+		color: '#ff69b4',
+		description: "ChatASAP was my venture into the world of real-time messaging and Swift development. The app allows users to anonymously connect and chat with random users instantly, making it a fun, unpredictable experience. Implementing Firebase Firestore for real-time database functionality was one of the trickiest parts—I had to ensure that messages were synchronized seamlessly across different users. Debugging real-time interactions proved challenging, but understanding Firebase Authentication and Cloud Functions was an invaluable experience. The best part? Seeing the app come to life and having friends test it out, watching their reactions as they got matched with random users!", 
+		shortDescription:
+			'Anonymous chat app developed using Swift and Firebase for real-time messaging.',
+		links: [],
+		logo: '',
+		name: 'ChatASAP',
+		period: {
+			from: new Date(2022, 6, 1)
+		},
+		skills: getSkills('swift', 'firebase'),
+		type: 'iOS Chat App'
+	},
+	{
+		slug: 'khao',
+		color: '#ff4500',
+		description: "KHAO is a project I built to bridge the gap between grocery shopping and home cooking. By integrating Optical Character Recognition (OCR) and OpenAI's API, the app scans grocery receipts, identifies ingredients, and suggests recipes based on available items. The concept came from my own experience of buying groceries and not knowing what to cook! The most difficult part was fine-tuning the OCR model to recognize different fonts and formats of grocery receipts. Learning about Firebase integration and managing real-time data was another hurdle. But seeing the AI suggest meal ideas based on simple receipts was incredibly satisfying!", 
+		shortDescription:
+			'Web app using OCR and OpenAI API to suggest recipes based on grocery receipts.',
+		links: [],
+		logo: '',
+		name: 'KHAO',
+		period: {
+			from: new Date(2023, 1, 1)
+		},
+		skills: getSkills('reactjs', 'firebase', 'openai'),
+		type: 'AI-powered Recipe Finder'
+	},
+	{
+		slug: 'autonomous-vehicle',
+		color: '#32cd32',
+		description: "Building an autonomous vehicle was one of the most technically challenging yet rewarding projects I've ever worked on. Using an RC car, custom PCBs, and a combination of C++, Python, and OpenCV, I developed a system that allowed the car to follow a line autonomously. I had to understand everything from sensor integration to embedded programming. Debugging hardware failures and sensor misreads were some of the toughest moments, but when the car finally moved on its own and correctly followed a path, the sense of accomplishment was unparalleled!", 
+		shortDescription:
+			'Autonomous RC car project utilizing computer vision and embedded systems.',
+		links: [],
+		logo: '',
+		name: 'Autonomous Vehicle',
+		period: {
+			from: new Date(2022, 9, 1)
+		},
+		skills: getSkills('cpp', 'python', 'opencv', 'embedded'),
+		type: 'Embedded Systems & AI'
+	},
+	{
+		slug: 'ir-security-system',
+		color: '#ff0000',
+		description: "The IR-Based Security System was one of my most exciting embedded systems projects. Using the TI CC3200 Launchpad, I developed a security system that leveraged an IR remote receiver and a PIR sensor to detect motion. When unauthorized motion was detected, the system would send an alert via AWS SNS email notifications while simultaneously logging events into an AWS database. The most difficult part was debugging communication between the IR sensor and the microcontroller, ensuring that false positives were minimized. This project deepened my understanding of SPI, I2C, and AWS cloud integration. Seeing the system function in real-time, triggering alerts with precision, was both fun and incredibly rewarding!", 
+		shortDescription:
+			'IR-based security system using TI CC3200, AWS, and embedded systems.',
+		links: [],
+		logo: '',
+		name: 'IR-Based Security System',
+		period: {
+			from: new Date(2023, 5, 1)
+		},
+		skills: getSkills('c', 'c++', 'aws', 'spi', 'i2c', 'embedded'),
+		type: 'Embedded Security System'
+	},
 ];
 
 export default MY_PROJECTS;
