@@ -1,39 +1,106 @@
-# Portfolio Website
+# Manoj's Portfolio Website
 
-## Features
+A modern, responsive portfolio website built with SvelteKit, TypeScript, and UnoCSS. This portfolio features a clean design, smooth animations, and integration with Spotify's Now Playing widget.
 
-- Responsive design
-- Dark/light mode
-- Projects showcase
-- Resume
-- Skills display
-- Spotify Now Playing widget that shows your currently playing track
+## 🚀 Features
 
-## Spotify Now Playing Setup
+- 🎨 Modern and responsive design
+- ⚡ Built with SvelteKit for optimal performance
+- 🎵 Spotify Now Playing integration
+- 📱 Mobile-first approach
+- 🎯 SEO optimized
+- 🎨 UnoCSS for utility-first styling
+- 📝 Markdown support for content
+- 🔍 TypeScript for type safety
 
-The portfolio includes a feature that displays your currently playing Spotify track. To set this up:
+## 🛠️ Tech Stack
 
-1. Follow the detailed instructions in [SPOTIFY_SETUP.md](SPOTIFY_SETUP.md)
-2. Make sure to set the environment variables for Spotify API integration
+- [SvelteKit](https://kit.svelte.dev/) - Full-stack web application framework
+- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- [UnoCSS](https://unocss.dev/) - Atomic CSS engine
+- [Vite](https://vitejs.dev/) - Next generation frontend tooling
+- [SASS](https://sass-lang.com/) - CSS preprocessor
+- [Prism.js](https://prismjs.com/) - Syntax highlighting
+- [Day.js](https://day.js.org/) - Modern date utility library
 
-## Getting Started
+## 🚀 Getting Started
 
-1. Clone this repository
-2. Install dependencies: `npm install` or `yarn install`
-3. Run the development server: `npm run dev` or `yarn dev`
-4. Build for production: `npm run build` or `yarn build`
+### Prerequisites
 
-## Environment Variables
+- Node.js (v16 or higher)
+- npm or yarn
 
-Copy the `.env.example` file to `.env` and fill in the values:
+### Installation
 
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
 ```
-# Spotify API credentials
-SPOTIFY_CLIENT_ID=your_client_id
-SPOTIFY_CLIENT_SECRET=your_client_secret
-SPOTIFY_REFRESH_TOKEN=your_refresh_token
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
 ```
 
-## Deployment
+3. Set up environment variables:
+```bash
+cp .env.example .env
+```
+Then edit `.env` with your Spotify API credentials (see [Spotify Setup Guide](SPOTIFY_SETUP.md))
 
-The website is deployed using GitHub Pages. The workflow is configured in `.github/workflows/deploy.yml`.
+### Development
+
+Start the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+The site will be available at `http://localhost:5173`
+
+### Building for Production
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+Preview the production build:
+```bash
+npm run preview
+# or
+yarn preview
+```
+
+## 🎵 Spotify Integration
+
+This portfolio includes a Spotify Now Playing widget that displays your currently playing track. To set this up, follow the instructions in [SPOTIFY_SETUP.md](SPOTIFY_SETUP.md).
+
+## 🧰 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run check` - Type-check the codebase
+- `npm run check:watch` - Type-check in watch mode
+- `npm run lint` - Lint the codebase
+- `npm run format` - Format the codebase
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+## 📧 Contact
+
+Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
+
+Project Link: [https://github.com/yourusername/portfolio](https://github.com/yourusername/portfolio)
