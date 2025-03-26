@@ -71,7 +71,6 @@ const MY_SKILLS = [
 		logo: Assets.Python,
 		name: 'Python'
 	}),
-
 	s({
 		slug: 'c',
 		color: 'gray',
@@ -80,7 +79,6 @@ const MY_SKILLS = [
 		logo: Assets.C,
 		name: 'C'
 	}),
-
 	s({
 		slug: 'cpp',
 		color: 'darkblue',
@@ -89,7 +87,6 @@ const MY_SKILLS = [
 		logo: Assets.Cpp,
 		name: 'C++'
 	}),
-
 	s({
 		slug: 'flutter',
 		color: 'blue',
@@ -98,7 +95,6 @@ const MY_SKILLS = [
 		logo: Assets.Flutter,
 		name: 'Flutter'
 	}),
-
 	s({
 		slug: 'dart',
 		color: 'blue',
@@ -107,25 +103,22 @@ const MY_SKILLS = [
 		logo: Assets.Dart,
 		name: 'Dart'
 	}),
-
 	s({
 		slug: 'lua',
 		color: 'green',
 		description:
 			'Made games with Lua in Pico 8. Also learnt basic Lua to customise my Neovim plugins',
-		logo: Assets.Unknown,
+		logo: Assets.Lua,
 		name: 'Lua'
 	}),
-
 	s({
 		slug: 'reactnative',
 		color: 'blue',
 		description:
 			'Just started using reactnative in 2023. So much more to learn from it',
-		logo: Assets.Unknown,
+		logo: Assets.ReactNative,
 		name: 'React Native'
 	}),
-
 	s({
 		slug: 'csharp',
 		color: 'purple',
@@ -134,7 +127,6 @@ const MY_SKILLS = [
 		logo: Assets.Csharp,
 		name: 'Csharp'
 	}),
-
 	s({
 		slug: 'bootstrap',
 		color: 'purple',
@@ -178,7 +170,7 @@ const MY_SKILLS = [
 		color: 'orange',
 		description:
 			'Soon..',
-		logo: Assets.Kotlin,
+		logo: Assets.Unknown,
 		name: 'Kotlin'
 	}),
 	s({
@@ -202,7 +194,7 @@ const MY_SKILLS = [
 		color: 'yellow',
 		description:
 			'Free Hosting + Free DataBase + Free Read/Write so most my projects end up here.',
-		logo: Assets.Firebase,
+		logo: Assets.Unknown,
 		name: 'Firebase'
 	}),
 	s({
@@ -228,6 +220,198 @@ const MY_SKILLS = [
 			'Exploring Vite through Svelte and ReactJs Codebase',
 		logo: Assets.Vite,
 		name: 'Vite'
+	}),
+	s({
+		slug: 'java',
+		color: 'red',
+		description:
+			'Learned Java in college and used it for Android development. Familiar with object-oriented programming concepts through Java.',
+		logo: Assets.Java,
+		name: 'Java'
+	}),
+	s({
+		slug: 'swift',
+		color: 'orange',
+		description:
+			'Started learning Swift for iOS development. Still in the early stages but excited about building iOS apps.',
+		logo: Assets.Swift,
+		name: 'Swift'
+	}),
+	s({
+		slug: 'ruby',
+		color: 'red',
+		description:
+			'Learned Ruby basics and used it with Ruby on Rails framework. Built a few web applications using Rails.',
+		logo: Assets.Ruby,
+		name: 'Ruby'
+	}),
+	s({
+		slug: 'php',
+		color: 'purple',
+		description:
+			'Used PHP for backend development in some of my early web projects. Familiar with Laravel framework.',
+		logo: Assets.PHP,
+		name: 'PHP'
+	}),
+	s({
+		slug: 'perl',
+		color: 'blue',
+		description:
+			'Learned Perl for system administration and text processing tasks. Used it for automation scripts.',
+		logo: Assets.Perl,
+		name: 'Perl'
+	}),
+	s({
+		slug: 'r',
+		color: 'blue',
+		description:
+			'Used R for statistical analysis and data visualization in academic projects.',
+		logo: Assets.R,
+		name: 'R'
+	}),
+	s({
+		slug: 'matlab',
+		color: 'orange',
+		description:
+			'Used MATLAB for numerical computing and engineering simulations in college projects.',
+		logo: Assets.Matlab,
+		name: 'MATLAB'
+	}),
+	s({
+		slug: 'scala',
+		color: 'red',
+		description:
+			'Learned Scala for functional programming and big data processing. Used it with Apache Spark.',
+		logo: Assets.Scala,
+		name: 'Scala'
+	}),
+	s({
+		slug: 'haskell',
+		color: 'purple',
+		description:
+			'Studied Haskell for understanding functional programming concepts. Used it in academic projects.',
+		logo: Assets.Haskell,
+		name: 'Haskell'
+	}),
+	s({
+		slug: 'elixir',
+		color: 'purple',
+		description:
+			'Learned Elixir for building scalable web applications. Used it with Phoenix framework.',
+		logo: Assets.Elixir,
+		name: 'Elixir'
+	}),
+	s({
+		slug: 'clojure',
+		color: 'green',
+		description:
+			'Explored Clojure for its Lisp-like syntax and functional programming features.',
+		logo: Assets.Clojure,
+		name: 'Clojure'
+	}),
+	s({
+		slug: 'fsharp',
+		color: 'blue',
+		description:
+			'Learned F# for functional programming on the .NET platform.',
+		logo: Assets.Fsharp,
+		name: 'F#'
+	}),
+	s({
+		slug: 'ocaml',
+		color: 'orange',
+		description:
+			'Studied OCaml for its strong type system and functional programming paradigm.',
+		logo: Assets.OCaml,
+		name: 'OCaml'
+	}),
+	s({
+		slug: 'racket',
+		color: 'red',
+		description:
+			'Used Racket for learning programming language concepts and building domain-specific languages.',
+		logo: Assets.Racket,
+		name: 'Racket'
+	}),
+	s({
+		slug: 'groovy',
+		color: 'green',
+		description:
+			'Used Groovy for scripting and automation tasks in Java environments.',
+		logo: Assets.Groovy,
+		name: 'Groovy'
+	}),
+	s({
+		slug: 'objectivec',
+		color: 'blue',
+		description:
+			'Learned Objective-C for iOS development before Swift became mainstream.',
+		logo: Assets.ObjectiveC,
+		name: 'Objective-C'
+	}),
+	s({
+		slug: 'assembly',
+		color: 'gray',
+		description:
+			'Studied Assembly language for understanding low-level programming and computer architecture.',
+		logo: Assets.Assembly,
+		name: 'Assembly'
+	}),
+	s({
+		slug: 'shell',
+		color: 'green',
+		description:
+			'Proficient in shell scripting for system administration and automation tasks.',
+		logo: Assets.Shell,
+		name: 'Shell'
+	}),
+	s({
+		slug: 'powershell',
+		color: 'blue',
+		description:
+			'Used PowerShell for Windows system administration and automation.',
+		logo: Assets.Powershell,
+		name: 'PowerShell'
+	}),
+	s({
+		slug: 'rust',
+		color: 'orange',
+		description:
+			'Learning Rust for systems programming and building high-performance applications.',
+		logo: Assets.Rust,
+		name: 'Rust'
+	}),
+	s({
+		slug: 'go',
+		color: 'blue',
+		description:
+			'Used Go for building concurrent applications and microservices.',
+		logo: Assets.Go,
+		name: 'Go'
+	}),
+	s({
+		slug: 'zig',
+		color: 'yellow',
+		description:
+			'Exploring Zig as a modern systems programming language.',
+		logo: Assets.Zig,
+		name: 'Zig'
+	}),
+	s({
+		slug: 'nim',
+		color: 'yellow',
+		description:
+			'Learning Nim for its performance and metaprogramming capabilities.',
+		logo: Assets.Nim,
+		name: 'Nim'
+	}),
+	s({
+		slug: 'crystal',
+		color: 'black',
+		description:
+			'Used Crystal for building fast web applications with Ruby-like syntax.',
+		logo: Assets.Crystal,
+		name: 'Crystal'
 	})
 ];
 

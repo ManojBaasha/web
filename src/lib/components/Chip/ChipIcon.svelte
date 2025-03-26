@@ -1,12 +1,16 @@
 <script lang="ts">
 	import { theme } from '$lib/stores/theme';
+	import { getAssetURL } from '$lib/data/assets';
+	import type { Asset } from '$lib/types';
 
 	export let name = '';
-	export let logo = '';
+	export let logo: Asset | string = '';
 	export let inverted = false;
 	export let grayscale = true;
 
 	export let href: string | undefined = undefined;
+
+	$: logoUrl = typeof logo === 'string' ? logo : getAssetURL(logo);
 </script>
 
 <svelte:element
@@ -21,9 +25,9 @@
 		<slot />
 	{:else}
 		<img
-			class={`w-15px h-15px ${inverted ? 'invert-100' : ''}`}
+			class={`w-15px h-15px object-contain ${inverted ? 'invert-100' : ''}`}
 			class:chip-icon-logo-inverted={$theme && inverted}
-			src={logo}
+			src={logoUrl}
 			alt={name}
 		/>
 	{/if}
