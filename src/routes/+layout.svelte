@@ -5,6 +5,7 @@
 	import { onHydrated, theme } from '$lib/stores/theme';
 	import { onMount } from 'svelte';
 	import SpotifyNowPlaying from '$lib/components/SpotifyNowPlaying.svelte';
+	import StarBackground from '$lib/components/StarBackground/StarBackground.svelte';
 
 	export const prerender = true;
 
@@ -12,6 +13,7 @@
 </script>
 
 <div class={`body contents ${$theme ? 'theme-dark' : 'theme-light'}`}>
+	<StarBackground />
 	<NavMenu />
 	<div class="content container"><slot /></div>
 	<SpotifyNowPlaying />
@@ -27,16 +29,15 @@
 
 	.body {
 		margin: 0px;
-		background-color: var(--main);
+		background-color: transparent;
 		color: var(--main-text);
 		font-family: var(--text-f);
 		display: flex;
 		flex-direction: column;
 		transition-duration: 200ms;
-
 		letter-spacing: 1px;
-
 		min-height: 100vh;
+		position: relative;
 	}
 
 	:global(p) {
