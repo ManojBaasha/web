@@ -2,6 +2,20 @@
 	import { onMount } from 'svelte';
 	import { theme } from '$lib/stores/theme';
 	import FloatingImage from './FloatingImage.svelte';
+	// Import all local images
+	import codingcat from '$lib/assets/codingcat.png';
+	import ghost from '$lib/assets/ghost.png';
+	import ai from '$lib/assets/ai.png';
+	import cat from '$lib/assets/cat.png';
+	import gncat from '$lib/assets/gncat.png';
+	import gymcat from '$lib/assets/gymcat.png';
+	import pepe1 from '$lib/assets/pepe1.png';
+	import pepe2 from '$lib/assets/pepe2.png';
+	import risitas from '$lib/assets/risitas.png';
+	import skull from '$lib/assets/skull.png';
+	import stick1 from '$lib/assets/stick1.png';
+	import stick2 from '$lib/assets/stick2.png';
+	import stick3 from '$lib/assets/stick3.png';
 
 	let stars1: HTMLElement;
 	let stars2: HTMLElement;
@@ -23,18 +37,19 @@
 		'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
 		'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
 		// Fun images from local assets
-		'/src/lib/assets/codingcat.png',
-		'/src/lib/assets/ghost.png',
-		'/src/lib/assets/ai.png',
-		'/src/lib/assets/cat.png',
-		'/src/lib/assets/gymcat.png',
-		'/src/lib/assets/pepe1.png',
-		'/src/lib/assets/pepe2.png',
-		'/src/lib/assets/risitas.png',
-		'/src/lib/assets/skull.png',
-		'/src/lib/assets/stick1.png',
-		'/src/lib/assets/stick2.png',
-		'/src/lib/assets/stick3.png'
+		codingcat,
+		ghost,
+		ai,
+		cat,
+		gncat,
+		gymcat,
+		pepe1,
+		pepe2,
+		risitas,
+		skull,
+		stick1,
+		stick2,
+		stick3
 	];
 
 	let floatingImages: Array<{
