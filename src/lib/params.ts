@@ -47,7 +47,7 @@ export const HOME: HomePageParams = {
 	name: 'Manoj',
 	lastName: 'Elango',
 	description:
-		"I’m a Computer Engineering senior graduating in June 2025 with 2 years of startup experience. I build AI-powered systems, craft iOS and web applications, and lead one of the largest tech communities in Davis. I'm currently looking for full-time opportunities where I can keep turning bold ideas into real-world impact.",
+		"I'm a Computer Engineering senior graduating in June 2025 with 2 years of startup experience. I build AI-powered systems, craft iOS and web applications, and lead one of the largest tech communities in Davis. I'm currently looking for full-time opportunities where I can keep turning bold ideas into real-world impact.",
 	links: [
 		{ platform: Platform.GitHub, link: 'https://github.com/ManojBaasha' },
 		{
@@ -86,7 +86,20 @@ export const SKILLS: SkillsPageParams = {
 
 export const RESUME: ResumePageParams = {
 	title: 'Resumé',
-	item: 'https://docs.google.com/document/d/1sVUSqEDS3ErBbDexqyKRWLj-yd6uxbyzHN3c408fckM/edit?usp=sharing'
+	items: [
+		{
+			name: 'Software Developer Resume',
+			url: '/resume/Software Developer Resume (1).pdf'
+		},
+		{
+			name: 'Hardware Engineer Resume',
+			url: '/resume/Hardware Engineer Resume (1).pdf'
+		},
+		{
+			name: 'Mobile Developer Resume',
+			url: '/resume/Mobile Developer Resume (8).pdf'
+		}
+	]
 };
 
 export const SEARCH: SearchPageParams = {

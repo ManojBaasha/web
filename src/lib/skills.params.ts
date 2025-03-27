@@ -7,7 +7,7 @@ const s = (skill: Skill) => skill;
 export type ArrayElementType<ArrayType extends readonly unknown[]> =
 	ArrayType extends readonly (infer ElementType)[] ? ElementType : never;
 
-const MY_SKILLS = [
+const MY_SKILLS: Array<Skill> = [
 	s({
 		slug: 'js',
 		color: 'yellow',
@@ -412,7 +412,161 @@ const MY_SKILLS = [
 			'Used Crystal for building fast web applications with Ruby-like syntax.',
 		logo: Assets.Crystal,
 		name: 'Crystal'
-	})
+	}),
+	{
+		slug: 'web-application',
+		color: '#4a90e2',
+		description: 'Projects focused on web development and web-based solutions',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+		name: 'Web Application'
+	},
+	{
+		slug: 'mobile-application',
+		color: '#ff69b4',
+		description: 'iOS and Android applications',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg',
+		name: 'Mobile Application'
+	},
+	{
+		slug: 'embedded-systems',
+		color: '#32cd32',
+		description: 'Hardware and firmware development',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/capacitorjs/capacitorjs-original.svg',
+		name: 'Embedded Systems'
+	},
+	{
+		slug: 'iot',
+		color: '#ff4500',
+		description: 'Internet of Things and connected devices',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/labview/labview-original.svg',
+		name: 'IoT'
+	},
+	{
+		slug: 'computer-vision',
+		color: '#4169e1',
+		description: 'Image processing and computer vision applications',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg',
+		name: 'Computer Vision'
+	},
+	{
+		slug: 'blockchain',
+		color: '#5e95e3',
+		description: 'Web3 and blockchain-related projects',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vault/vault-original.svg',
+		name: 'Blockchain'
+	},
+	{
+		slug: 'game-development',
+		color: '#ffa500',
+		description: 'Game design and development',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg',
+		name: 'Game Development'
+	},
+	{
+		slug: 'discord-bot',
+		color: '#800080',
+		description: 'Discord bot development',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discord/discord-original.svg',
+		name: 'Discord Bot'
+	},
+	{
+		slug: 'open-source',
+		color: '#20b2aa',
+		description: 'Open source projects and contributions',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+		name: 'Open Source'
+	},
+	{
+		slug: 'community',
+		color: '#9370db',
+		description: 'Projects focused on community engagement',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg',
+		name: 'Community'
+	},
+	{
+		slug: 'education',
+		color: '#00ffff',
+		description: 'Educational tools and platforms',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg',
+		name: 'Education'
+	},
+	{
+		slug: 'real-time-communication',
+		color: '#ff6347',
+		description: 'Real-time data and communication systems',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg',
+		name: 'Real-time Communication'
+	},
+	{
+		slug: 'hardware-design',
+		color: '#8b008b',
+		description: 'PCB design and hardware engineering',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg',
+		name: 'Hardware Design'
+	},
+	{
+		slug: 'signal-processing',
+		color: '#ff69b4',
+		description: 'Audio and signal processing applications',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg',
+		name: 'Signal Processing'
+	},
+	{
+		slug: 'medical-applications',
+		color: '#ff0000',
+		description: 'Healthcare and medical technology',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+		name: 'Medical Applications'
+	},
+	{
+		slug: 'data-analysis',
+		color: '#4169e1',
+		description: 'Data processing and visualization',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg',
+		name: 'Data Analysis'
+	},
+	{
+		slug: 'security',
+		color: '#ff4500',
+		description: 'Security systems and applications',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+		name: 'Security'
+	},
+	{
+		slug: 'cloud-integration',
+		color: '#008080',
+		description: 'Cloud services and integration',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg',
+		name: 'Cloud Integration'
+	},
+	{
+		slug: 'personal-project',
+		color: '#4a90e2',
+		description: 'Personal development and portfolio projects',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+		name: 'Personal Project'
+	},
+	{
+		slug: 'development-tools',
+		color: '#20b2aa',
+		description: 'Development tools and utilities',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
+		name: 'Development Tools'
+	},
+	{
+		slug: 'testing-development',
+		color: '#9370db',
+		description: 'Testing and development frameworks',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
+		name: 'Testing & Development'
+	},
+	{
+		slug: 'automation',
+		color: '#ff6347',
+		description: 'Automation and scripting projects',
+		logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg',
+		name: 'Automation'
+	}
 ];
 
 export default MY_SKILLS;

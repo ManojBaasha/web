@@ -88,6 +88,11 @@ export type ExperiencePageParams = PageWithSearchParams<Experience>;
 
 export type SkillsPageParams = PageWithSearchParams<Skill>;
 
+export interface ResumeItem {
+	name: string;
+	url: string;
+}
+
 export interface ResumePageParams extends PageParams {
-	item: string;
+	items: Array<ResumeItem>;
 }

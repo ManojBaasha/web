@@ -7,6 +7,7 @@
 	import { onMount } from 'svelte';
 	import MY_SKILLS from '$lib/skills.params';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
+	import { CATEGORY_MAPPING, getSubCategories, getMainCategories } from '$lib/data/category-mapping';
 
 	interface SkillFilter extends Skill {
 		isSelected?: boolean;
@@ -21,35 +22,26 @@
 	let search = '';
 	let displayed: Array<Project> = [];
 
-	const isSelected = (slug: string): boolean => {
-		return filters.some((item) => item.slug === slug && item.isSelected);
-	};
+	let selectedMainCategory: string | null = null;
+	let selectedSkills: Set<string> = new Set();
 
-	const onSelected = (slug: string) => {
-		filters = filters.map((tech) => {
-			if (tech.slug === slug) {
-				tech.isSelected = !isSelected(slug);
-			}
+	$: displayed = items.filter((project) => {
+		const matchesSearch = search
+			? project.name.toLowerCase().includes(search.toLowerCase()) ||
+			  project.description.toLowerCase().includes(search.toLowerCase())
+			: true;
 
-			return tech;
-		});
-	};
+		if (!selectedMainCategory && selectedSkills.size === 0) {
+			return matchesSearch;
+		}
 
-	$: {
-		displayed = items.filter((project) => {
-			const isFiltered =
-				filters.every((item) => !item.isSelected) ||
-				project.skills.some((tech) =>
-					filters.some((filter) => filter.isSelected && filter.slug === tech.slug)
-				);
+		if (selectedMainCategory) {
+			const categorySkills = getSubCategories(selectedMainCategory);
+			return matchesSearch && project.skills.some((skill) => categorySkills.includes(skill.slug));
+		}
 
-			const isSearched =
-				search.trim().length === 0 ||
-				project.name.trim().toLowerCase().includes(search.trim().toLowerCase());
-
-			return isFiltered && isSearched;
-		});
-	}
+		return matchesSearch && project.skills.some((skill) => selectedSkills.has(skill.slug));
+	});
 
 	const onSearch = (e: CustomEvent<{ search: string }>) => {
 		search = e.detail.search;
@@ -68,15 +60,57 @@
 			}
 		}
 	});
+
+	function toggleSkill(skill: string) {
+		if (selectedSkills.has(skill)) {
+			selectedSkills.delete(skill);
+		} else {
+			if (selectedMainCategory) {
+				selectedSkills = new Set([skill]);
+			} else {
+				selectedSkills.add(skill);
+			}
+		}
+		selectedSkills = selectedSkills; // trigger reactivity
+	}
+
+	function toggleMainCategory(category: string) {
+		if (selectedMainCategory === category) {
+			selectedMainCategory = null;
+			selectedSkills.clear();
+		} else {
+			selectedMainCategory = category;
+			selectedSkills.clear();
+		}
+	}
 </script>
 
 <SearchPage {title} on:search={onSearch}>
 	<div class="projects-filters">
-		{#each filters as tech}
-			<Chip active={tech.isSelected} classes={'text-0.8em'} on:click={() => onSelected(tech.slug)}
-				>{tech.name}</Chip
-			>
-		{/each}
+		<div class="main-categories">
+			{#each getMainCategories() as category}
+				<Chip 
+					active={selectedMainCategory === category}
+					classes={'text-0.8em'}
+					on:click={() => toggleMainCategory(category)}
+				>
+					{MY_SKILLS.find(s => s.slug === category)?.name || category}
+				</Chip>
+			{/each}
+		</div>
+		{#if selectedMainCategory}
+			<div class="sub-categories">
+				{#each getSubCategories(selectedMainCategory) as skill}
+					<Chip 
+						active={selectedSkills.has(skill)}
+						classes={'text-0.8em'}
+						on:click={() => toggleSkill(skill)}
+					>
+						{MY_SKILLS.find(s => s.slug === skill)?.name || skill}
+					</Chip>
+				{/each}
+			</div>
+		{/if}
 	</div>
 	{#if displayed.length === 0}
 		<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">
@@ -104,5 +138,19 @@
 		@media (max-width: 850px) {
 			grid-template-columns: repeat(1, 1fr);
 		}
+	}
+
+	.main-categories {
+		display: flex;
+		gap: 1rem;
+		margin-bottom: 1rem;
+		flex-wrap: wrap;
+	}
+
+	.sub-categories {
+		display: flex;
+		gap: 1rem;
+		margin-bottom: 1rem;
+		flex-wrap: wrap;
 	}
 </style>
