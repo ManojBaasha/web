@@ -1,4 +1,4 @@
-import MY_SKILLS from '$lib/skills.params';
+import { MY_SKILLS } from '$lib/skills.params';
 
 export function load({ params }: { params: Record<string, string> }) {
 	if (params.slug) {

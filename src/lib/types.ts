@@ -59,11 +59,11 @@ export interface Experience extends Project {
 	contract: ContractType;
 }
 
-export interface PageParams {
+export interface BasePageParams {
 	title: string;
 }
 
-export interface PageWithSearchParams<T> extends PageParams {
+export interface PageWithSearchParams<T> extends BasePageParams {
 	items: Array<T>;
 }
 
@@ -72,7 +72,7 @@ export interface HomeLink {
 	link: string;
 }
 
-export interface HomePageParams extends PageParams {
+export interface HomePageParams extends BasePageParams {
 	name: string;
 	lastName: string;
 	description: string;
@@ -80,7 +80,7 @@ export interface HomePageParams extends PageParams {
 	skills?: Array<Skill>;
 }
 
-export type SearchPageParams = PageParams;
+export type SearchPageParams = BasePageParams;
 
 export type ProjectPageParams = PageWithSearchParams<Project>;
 
@@ -93,6 +93,12 @@ export interface ResumeItem {
 	url: string;
 }
 
-export interface ResumePageParams extends PageParams {
+export interface ResumePageParams extends BasePageParams {
 	items: Array<ResumeItem>;
 }
+
+export interface AboutPageParams extends BasePageParams {
+	title: 'About';
+}
+
+export type PageParams = HomePageParams | ProjectPageParams | ExperiencePageParams | ResumePageParams | AboutPageParams | SearchPageParams;

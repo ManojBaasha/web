@@ -56,7 +56,7 @@
 		width: var(--size);
 		height: var(--size);
 		opacity: 0;
-		transition: opacity 2s ease-in-out;
+		transition: opacity 1s ease-in-out;
 		pointer-events: none;
 		transform: rotate(var(--rotation));
 	}
@@ -96,7 +96,7 @@
 		5% {
 			opacity: 1;
 		}
-		95% {
+		85% {
 			opacity: 1;
 		}
 		100% {
@@ -113,7 +113,7 @@
 		5% {
 			opacity: 1;
 		}
-		95% {
+		85% {
 			opacity: 1;
 		}
 		100% {
@@ -130,7 +130,7 @@
 		5% {
 			opacity: 1;
 		}
-		95% {
+		85% {
 			opacity: 1;
 		}
 		100% {
@@ -147,7 +147,7 @@
 		5% {
 			opacity: 1;
 		}
-		95% {
+		85% {
 			opacity: 1;
 		}
 		100% {
@@ -164,7 +164,7 @@
 		5% {
 			opacity: 1;
 		}
-		95% {
+		85% {
 			opacity: 1;
 		}
 		100% {

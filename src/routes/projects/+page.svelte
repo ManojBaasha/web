@@ -5,7 +5,7 @@
 	import { PROJECTS } from '$lib/params';
 	import type { Project, Skill } from '$lib/types';
 	import { onMount } from 'svelte';
-	import MY_SKILLS from '$lib/skills.params';
+	import { MY_SKILLS } from '$lib/skills.params';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 	import { CATEGORY_MAPPING, getSubCategories, getMainCategories } from '$lib/data/category-mapping';
 

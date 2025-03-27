@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { getAssetURL } from '$lib/data/assets';
 	import UIcon from '../Icon/UIcon.svelte';
+	import type { Skill } from '$lib/types';
 	import sadcatok from '$lib/assets/cat.png';
 	import codingcat from '$lib/assets/codingcat.png';
 	import ghostpfp from '$lib/assets/ghost.png';
@@ -15,8 +16,10 @@
 	import emotionstick from '$lib/assets/stick2.png';
 	import happystick from '$lib/assets/stick3.png';
 
+	export let items: Array<Skill> = [];
+
 	//make a struct of items with name and logo
-	const items = [
+	const carouselItems = [
 		{
 			name: 'Me when im coding',
 			logo: codingcat
@@ -82,7 +85,7 @@
 
 	const slide = (right: boolean) => {
 		if (right) {
-			if (index < items.length - 1) {
+			if (index < carouselItems.length - 1) {
 				index = index + 1;
 			} else {
 				index = index - 1;
@@ -129,7 +132,7 @@
 
 <div class="carrousel flex-[0.5] row-center">
 	<div bind:this={element} class="row overflow-hidden box-content w-150px">
-		{#each items as item}
+		{#each carouselItems as item}
 			<div class="box-content w-150px p-15px col-center">
 				<img class="w-120px h-120px aspect-square" src={getAssetURL(item.logo)} alt={item.name} />
 				<span class="text-center m-t-20px">{item.name}</span>

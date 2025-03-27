@@ -8,7 +8,7 @@
 	import { base } from '$app/paths';
 	import type { Skill } from '$lib/types';
 	import { getAssetURL } from '$lib/data/assets';
-	import { SKILLS } from '$lib/params';
+	import { SKILLS } from '$lib/skills.params';
 	import Markdown from '$lib/components/Markdown.svelte';
 	import TabTitle from '$lib/components/TabTitle.svelte';
 	import Chip from '$lib/components/Chip/Chip.svelte';
