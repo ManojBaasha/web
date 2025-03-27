@@ -47,7 +47,7 @@ export const HOME: HomePageParams = {
 	name: 'Manoj',
 	lastName: 'Elango',
 	description:
-		" I am a junior studying computer engineering at UC Davis. I work as an embedded systems engineer and am passionate about coding and building interesting projects. I'm excited about new technologies and software and spend my free time working on projects and hitting the gym.",
+		"I’m a Computer Engineering senior graduating in June 2025 with 2 years of startup experience. I build AI-powered systems, craft iOS and web applications, and lead one of the largest tech communities in Davis—turning bold ideas into real-world impact.",
 	links: [
 		{ platform: Platform.GitHub, link: 'https://github.com/ManojBaasha' },
 		{
