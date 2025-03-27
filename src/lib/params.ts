@@ -47,7 +47,7 @@ export const HOME: HomePageParams = {
 	name: 'Manoj',
 	lastName: 'Elango',
 	description:
-		"I’m a Computer Engineering senior graduating in June 2025 with 2 years of startup experience. I build AI-powered systems, craft iOS and web applications, and lead one of the largest tech communities in Davis—turning bold ideas into real-world impact.",
+		"I’m a Computer Engineering senior graduating in June 2025 with 2 years of startup experience. I build AI-powered systems, craft iOS and web applications, and lead one of the largest tech communities in Davis. I'm currently looking for full-time opportunities where I can keep turning bold ideas into real-world impact.",
 	links: [
 		{ platform: Platform.GitHub, link: 'https://github.com/ManojBaasha' },
 		{
