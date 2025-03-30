@@ -10,6 +10,7 @@ import ai from './assets/ai.png';
 import skull from './assets/skull.png';
 import chatasap from './assets/chatasap.png';
 import khao from './assets/khao.png';
+import autonomous from './assets/about/workintech.jpeg';
 
 const MY_PROJECTS: Array<Project> = [
 	{
@@ -37,7 +38,9 @@ const MY_PROJECTS: Array<Project> = [
 		color: '#ff0000',
 		description: "The IR-Based Security System was one of my most exciting embedded systems projects. Using the TI CC3200 Launchpad, I developed a security system that leveraged an IR remote receiver and a PIR sensor to detect motion. When unauthorized motion was detected, the system would send an alert via AWS SNS email notifications while simultaneously logging events into an AWS database. The most difficult part was debugging communication between the IR sensor and the microcontroller, ensuring that false positives were minimized. This project deepened my understanding of SPI, I2C, and AWS cloud integration. Seeing the system function in real-time, triggering alerts with precision, was both fun and incredibly rewarding!",
 		shortDescription: 'Comprehensive home security system using IR-based motion detection and AWS cloud integration.',
-		links: [],
+		links: [
+			{ to: 'https://eec172finalproj.netlify.app/', label: 'Website' }
+		],
 		logo: '',
 		name: 'SeCURE - IR-Based Security System',
 		period: {
@@ -51,7 +54,10 @@ const MY_PROJECTS: Array<Project> = [
 		color: '#5e95e3',
 		description: "CrypGo is an iOS app developed using React Native Expo that serves as a blockchain wallet, allowing users to securely submit, retrieve, update, and create transactions. This project was my introduction to integrating mobile applications with blockchain technology. Leading a team of five developers over 13 weeks was an incredible learning experience, involving sprint planning, debugging, and real-world problem-solving. The biggest challenge was ensuring seamless integration with ResilientDB, an open-source fully distributed ledger system. Learning GraphQL for efficient data querying was a steep curve, but it significantly improved my backend skills. The most enjoyable part was seeing everything come together—after weeks of debugging, finally getting a transaction to go through was a rewarding moment!",
 		shortDescription: 'Blockchain wallet app built with React Native Expo, integrated with ResilientDB for secure transactions.',
-		links: [{ to: 'https://github.com/ResilientApp/CrypGo', label: 'GitHub' }],
+		links: [
+			{ to: 'https://github.com/ResilientApp/CrypGo', label: 'GitHub' },
+			{ to: 'https://blog.resilientdb.com/2023/12/17/CrypoGo.html', label: 'Blog' }
+		],
 		logo: crypgologo,
 		name: 'CrypGo',
 		period: {
@@ -66,7 +72,7 @@ const MY_PROJECTS: Array<Project> = [
 		description: "Building an autonomous vehicle was one of the most technically challenging yet rewarding projects I've ever worked on. Using an RC car, custom PCBs, and a combination of C++, Python, and OpenCV, I developed a system that allowed the car to follow a line autonomously. I had to understand everything from sensor integration to embedded programming. Debugging hardware failures and sensor misreads were some of the toughest moments, but when the car finally moved on its own and correctly followed a path, the sense of accomplishment was unparalleled!",
 		shortDescription: 'Line-following robot with custom PCB and computer vision capabilities.',
 		links: [],
-		logo: '',
+		logo: autonomous,
 		name: 'Autonomous Vehicle Project',
 		period: {
 			from: new Date(2023, 1, 1)
@@ -223,34 +229,6 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('swift', 'ios', 'mobile-application', 'data-analysis'),
 		type: 'Mobile Application'
-	},
-	{
-		slug: 'studyhow',
-		color: '#20b2aa',
-		description: "StudyHow is an educational app designed to help students better organize their study materials and track their progress. Built for iOS using Swift, the app features study schedule management, progress tracking, and resource organization capabilities. The project was inspired by my own experiences as a student, and I focused on creating a tool that would make study management more efficient and effective.",
-		shortDescription: 'Educational app for study management and organization.',
-		links: [],
-		logo: '',
-		name: 'StudyHow',
-		period: {
-			from: new Date(2023, 1, 1)
-		},
-		skills: getSkills('swift', 'ios', 'mobile-application', 'education'),
-		type: 'Mobile Application'
-	},
-	{
-		slug: 'terra-ai',
-		color: '#ff6347',
-		description: "Terra AI is an AI-powered website for Terra AI services. Built with React and TypeScript, the project features a clean, professional interface for AI services. The most challenging aspect was integrating various AI services while maintaining a seamless user experience. The project taught me about service integration and creating intuitive interfaces for complex AI functionalities.",
-		shortDescription: 'AI-powered website for Terra AI services.',
-		links: [],
-		logo: '',
-		name: 'Terra AI',
-		period: {
-			from: new Date(2023, 1, 1)
-		},
-		skills: getSkills('reactjs', 'typescript', 'tailwindcss', 'ai-ml', 'web-application'),
-		type: 'Web Application'
 	},
 	{
 		slug: 'wisegenie',
