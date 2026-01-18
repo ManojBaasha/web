@@ -46,6 +46,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@vercel/analytics": "^1.6.1",
 		"dayjs": "^1.11.10"
 	}
 }
