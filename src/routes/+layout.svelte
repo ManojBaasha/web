@@ -7,8 +7,6 @@
 	import StarBackground from '$lib/components/StarBackground/StarBackground.svelte';
 	import { injectAnalytics } from '@vercel/analytics/sveltekit';
 
-	export const prerender = true;
-
 	onMount(() => {
 		onHydrated();
 		injectAnalytics();

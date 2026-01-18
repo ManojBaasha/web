@@ -12,14 +12,14 @@
 
 	export let content: string;
 
-	onMount(() => {
+	onMount(async () => {
 		marked.use(gfmHeadingId());
 		marked.use(mangle());
 
 		const sanitizer = createSanitizer(window);
 
 		if (window) {
-			const parsed = marked.parse(content);
+			const parsed = await marked.parse(content);
 
 			container.innerHTML = sanitizer.sanitize(parsed);
 

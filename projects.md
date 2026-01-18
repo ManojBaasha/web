@@ -140,7 +140,6 @@ Welcome to my portfolio! I'm a software engineer passionate about building innov
 - **Description**: Modern portfolio website built with SvelteKit.
 - **Technologies**: SvelteKit, TypeScript, UnoCSS
 - **Features**:
-
   - Responsive design
   - Dark/light mode
   - Project showcase

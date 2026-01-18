@@ -130,7 +130,7 @@
 				<div class="image-carousel">
 					<img
 						src={sectionImages['My Work in Tech'][imageIndices['My Work in Tech']]}
-						alt="Tech Projects"
+						alt="My tech projects collage"
 						class:active={true}
 					/>
 				</div>
@@ -157,7 +157,7 @@
 				<div class="image-carousel">
 					<img
 						src={sectionImages['Beyond Code'][imageIndices['Beyond Code']]}
-						alt="Beyond Code"
+						alt="Life beyond coding"
 						class:active={true}
 					/>
 				</div>
@@ -169,7 +169,7 @@
 				<div class="image-carousel">
 					<img
 						src={sectionImages['Leading to Teach'][imageIndices['Leading to Teach']]}
-						alt="Leading to Teach"
+						alt="Teaching and community leadership"
 						class:active={true}
 					/>
 				</div>
@@ -217,7 +217,7 @@
 				<div class="image-carousel">
 					<img
 						src={sectionImages['The Big Picture'][imageIndices['The Big Picture']]}
-						alt="The Big Picture"
+						alt="Section visual"
 						class:active={true}
 					/>
 				</div>

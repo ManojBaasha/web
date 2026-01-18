@@ -1,0 +1,19 @@
+.resume.svelte-14g4sb.svelte-14g4sb {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.resume-grid.svelte-14g4sb.svelte-14g4sb {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1rem;
+	width: 100%;
+	max-width: 800px;
+	padding: 0 1rem;
+}
+.resume-grid.svelte-14g4sb a.svelte-14g4sb {
+	color: inherit;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+}

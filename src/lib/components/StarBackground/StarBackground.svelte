@@ -172,9 +172,12 @@
 			];
 
 			// Remove the image after it completes one animation cycle
-			setTimeout(() => {
-				floatingImages = floatingImages.filter((img) => img.src !== src);
-			}, duration * 1000 + delay + 1000); // Add 1 second buffer for fade out
+			setTimeout(
+				() => {
+					floatingImages = floatingImages.filter((img) => img.src !== src);
+				},
+				duration * 1000 + delay + 1000
+			); // Add 1 second buffer for fade out
 		};
 
 		// Generate floating images periodically

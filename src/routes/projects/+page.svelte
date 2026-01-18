@@ -32,7 +32,7 @@
 	$: displayed = items.filter((project) => {
 		const matchesSearch = search
 			? project.name.toLowerCase().includes(search.toLowerCase()) ||
-			  project.description.toLowerCase().includes(search.toLowerCase())
+				project.description.toLowerCase().includes(search.toLowerCase())
 			: true;
 
 		if (!selectedMainCategory && selectedSkills.size === 0) {

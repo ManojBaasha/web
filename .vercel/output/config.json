@@ -1,0 +1,1031 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/about",
+			"dest": "/about/"
+		},
+		{
+			"src": "/about/",
+			"status": 308,
+			"headers": {
+				"Location": "/about"
+			}
+		},
+		{
+			"src": "/experience",
+			"dest": "/experience/"
+		},
+		{
+			"src": "/experience/",
+			"status": 308,
+			"headers": {
+				"Location": "/experience"
+			}
+		},
+		{
+			"src": "/projects",
+			"dest": "/projects/"
+		},
+		{
+			"src": "/projects/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects"
+			}
+		},
+		{
+			"src": "/resume",
+			"dest": "/resume/"
+		},
+		{
+			"src": "/resume/",
+			"status": 308,
+			"headers": {
+				"Location": "/resume"
+			}
+		},
+		{
+			"src": "/search",
+			"dest": "/search/"
+		},
+		{
+			"src": "/search/",
+			"status": 308,
+			"headers": {
+				"Location": "/search"
+			}
+		},
+		{
+			"src": "/experience/gdsc-president",
+			"dest": "/experience/gdsc-president/"
+		},
+		{
+			"src": "/experience/gdsc-president/",
+			"status": 308,
+			"headers": {
+				"Location": "/experience/gdsc-president"
+			}
+		},
+		{
+			"src": "/skills/flutter",
+			"dest": "/skills/flutter/"
+		},
+		{
+			"src": "/skills/flutter/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/flutter"
+			}
+		},
+		{
+			"src": "/skills/dart",
+			"dest": "/skills/dart/"
+		},
+		{
+			"src": "/skills/dart/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/dart"
+			}
+		},
+		{
+			"src": "/experience/sachacks-vp",
+			"dest": "/experience/sachacks-vp/"
+		},
+		{
+			"src": "/experience/sachacks-vp/",
+			"status": 308,
+			"headers": {
+				"Location": "/experience/sachacks-vp"
+			}
+		},
+		{
+			"src": "/skills/python",
+			"dest": "/skills/python/"
+		},
+		{
+			"src": "/skills/python/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/python"
+			}
+		},
+		{
+			"src": "/experience/swift-club-founder",
+			"dest": "/experience/swift-club-founder/"
+		},
+		{
+			"src": "/experience/swift-club-founder/",
+			"status": 308,
+			"headers": {
+				"Location": "/experience/swift-club-founder"
+			}
+		},
+		{
+			"src": "/skills/swift",
+			"dest": "/skills/swift/"
+		},
+		{
+			"src": "/skills/swift/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/swift"
+			}
+		},
+		{
+			"src": "/experience/ravata-engineer",
+			"dest": "/experience/ravata-engineer/"
+		},
+		{
+			"src": "/experience/ravata-engineer/",
+			"status": 308,
+			"headers": {
+				"Location": "/experience/ravata-engineer"
+			}
+		},
+		{
+			"src": "/skills/c",
+			"dest": "/skills/c/"
+		},
+		{
+			"src": "/skills/c/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/c"
+			}
+		},
+		{
+			"src": "/skills/cpp",
+			"dest": "/skills/cpp/"
+		},
+		{
+			"src": "/skills/cpp/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/cpp"
+			}
+		},
+		{
+			"src": "/skills/csharp",
+			"dest": "/skills/csharp/"
+		},
+		{
+			"src": "/skills/csharp/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/csharp"
+			}
+		},
+		{
+			"src": "/skills/embedded-systems",
+			"dest": "/skills/embedded-systems/"
+		},
+		{
+			"src": "/skills/embedded-systems/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/embedded-systems"
+			}
+		},
+		{
+			"src": "/experience/resilientdb-researcher",
+			"dest": "/experience/resilientdb-researcher/"
+		},
+		{
+			"src": "/experience/resilientdb-researcher/",
+			"status": 308,
+			"headers": {
+				"Location": "/experience/resilientdb-researcher"
+			}
+		},
+		{
+			"src": "/skills/blockchain",
+			"dest": "/skills/blockchain/"
+		},
+		{
+			"src": "/skills/blockchain/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/blockchain"
+			}
+		},
+		{
+			"src": "/experience/research",
+			"dest": "/experience/research/"
+		},
+		{
+			"src": "/experience/research/",
+			"status": 308,
+			"headers": {
+				"Location": "/experience/research"
+			}
+		},
+		{
+			"src": "/skills/js",
+			"dest": "/skills/js/"
+		},
+		{
+			"src": "/skills/js/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/js"
+			}
+		},
+		{
+			"src": "/skills/css",
+			"dest": "/skills/css/"
+		},
+		{
+			"src": "/skills/css/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/css"
+			}
+		},
+		{
+			"src": "/skills/html",
+			"dest": "/skills/html/"
+		},
+		{
+			"src": "/skills/html/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/html"
+			}
+		},
+		{
+			"src": "/skills/reactjs",
+			"dest": "/skills/reactjs/"
+		},
+		{
+			"src": "/skills/reactjs/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/reactjs"
+			}
+		},
+		{
+			"src": "/skills/firebase",
+			"dest": "/skills/firebase/"
+		},
+		{
+			"src": "/skills/firebase/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/firebase"
+			}
+		},
+		{
+			"src": "/experience/tech-director",
+			"dest": "/experience/tech-director/"
+		},
+		{
+			"src": "/experience/tech-director/",
+			"status": 308,
+			"headers": {
+				"Location": "/experience/tech-director"
+			}
+		},
+		{
+			"src": "/experience/orientation-leader",
+			"dest": "/experience/orientation-leader/"
+		},
+		{
+			"src": "/experience/orientation-leader/",
+			"status": 308,
+			"headers": {
+				"Location": "/experience/orientation-leader"
+			}
+		},
+		{
+			"src": "/projects/synthiaai",
+			"dest": "/projects/synthiaai/"
+		},
+		{
+			"src": "/projects/synthiaai/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/synthiaai"
+			}
+		},
+		{
+			"src": "/skills/ts",
+			"dest": "/skills/ts/"
+		},
+		{
+			"src": "/skills/ts/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/ts"
+			}
+		},
+		{
+			"src": "/skills/flask",
+			"dest": "/skills/flask/"
+		},
+		{
+			"src": "/skills/flask/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/flask"
+			}
+		},
+		{
+			"src": "/skills/web-application",
+			"dest": "/skills/web-application/"
+		},
+		{
+			"src": "/skills/web-application/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/web-application"
+			}
+		},
+		{
+			"src": "/projects/secure-ir-security",
+			"dest": "/projects/secure-ir-security/"
+		},
+		{
+			"src": "/projects/secure-ir-security/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/secure-ir-security"
+			}
+		},
+		{
+			"src": "/skills/iot",
+			"dest": "/skills/iot/"
+		},
+		{
+			"src": "/skills/iot/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/iot"
+			}
+		},
+		{
+			"src": "/skills/security",
+			"dest": "/skills/security/"
+		},
+		{
+			"src": "/skills/security/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/security"
+			}
+		},
+		{
+			"src": "/skills/cloud-integration",
+			"dest": "/skills/cloud-integration/"
+		},
+		{
+			"src": "/skills/cloud-integration/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/cloud-integration"
+			}
+		},
+		{
+			"src": "/projects/crypgo",
+			"dest": "/projects/crypgo/"
+		},
+		{
+			"src": "/projects/crypgo/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/crypgo"
+			}
+		},
+		{
+			"src": "/skills/reactnative",
+			"dest": "/skills/reactnative/"
+		},
+		{
+			"src": "/skills/reactnative/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/reactnative"
+			}
+		},
+		{
+			"src": "/skills/mobile-application",
+			"dest": "/skills/mobile-application/"
+		},
+		{
+			"src": "/skills/mobile-application/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/mobile-application"
+			}
+		},
+		{
+			"src": "/skills/open-source",
+			"dest": "/skills/open-source/"
+		},
+		{
+			"src": "/skills/open-source/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/open-source"
+			}
+		},
+		{
+			"src": "/projects/autonomous-vehicle",
+			"dest": "/projects/autonomous-vehicle/"
+		},
+		{
+			"src": "/projects/autonomous-vehicle/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/autonomous-vehicle"
+			}
+		},
+		{
+			"src": "/skills/computer-vision",
+			"dest": "/skills/computer-vision/"
+		},
+		{
+			"src": "/skills/computer-vision/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/computer-vision"
+			}
+		},
+		{
+			"src": "/skills/hardware-design",
+			"dest": "/skills/hardware-design/"
+		},
+		{
+			"src": "/skills/hardware-design/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/hardware-design"
+			}
+		},
+		{
+			"src": "/projects/khao",
+			"dest": "/projects/khao/"
+		},
+		{
+			"src": "/projects/khao/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/khao"
+			}
+		},
+		{
+			"src": "/projects/ivf-embryo-system",
+			"dest": "/projects/ivf-embryo-system/"
+		},
+		{
+			"src": "/projects/ivf-embryo-system/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/ivf-embryo-system"
+			}
+		},
+		{
+			"src": "/skills/matlab",
+			"dest": "/skills/matlab/"
+		},
+		{
+			"src": "/skills/matlab/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/matlab"
+			}
+		},
+		{
+			"src": "/skills/medical-applications",
+			"dest": "/skills/medical-applications/"
+		},
+		{
+			"src": "/skills/medical-applications/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/medical-applications"
+			}
+		},
+		{
+			"src": "/skills/data-analysis",
+			"dest": "/skills/data-analysis/"
+		},
+		{
+			"src": "/skills/data-analysis/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/data-analysis"
+			}
+		},
+		{
+			"src": "/projects/audio-music-follower",
+			"dest": "/projects/audio-music-follower/"
+		},
+		{
+			"src": "/projects/audio-music-follower/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/audio-music-follower"
+			}
+		},
+		{
+			"src": "/skills/signal-processing",
+			"dest": "/skills/signal-processing/"
+		},
+		{
+			"src": "/skills/signal-processing/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/signal-processing"
+			}
+		},
+		{
+			"src": "/projects/education-mobile-app",
+			"dest": "/projects/education-mobile-app/"
+		},
+		{
+			"src": "/projects/education-mobile-app/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/education-mobile-app"
+			}
+		},
+		{
+			"src": "/skills/sass",
+			"dest": "/skills/sass/"
+		},
+		{
+			"src": "/skills/sass/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/sass"
+			}
+		},
+		{
+			"src": "/skills/education",
+			"dest": "/skills/education/"
+		},
+		{
+			"src": "/skills/education/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/education"
+			}
+		},
+		{
+			"src": "/projects/chatasap",
+			"dest": "/projects/chatasap/"
+		},
+		{
+			"src": "/projects/chatasap/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/chatasap"
+			}
+		},
+		{
+			"src": "/skills/real-time-communication",
+			"dest": "/skills/real-time-communication/"
+		},
+		{
+			"src": "/skills/real-time-communication/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/real-time-communication"
+			}
+		},
+		{
+			"src": "/projects/discordbot",
+			"dest": "/projects/discordbot/"
+		},
+		{
+			"src": "/projects/discordbot/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/discordbot"
+			}
+		},
+		{
+			"src": "/skills/discord-bot",
+			"dest": "/skills/discord-bot/"
+		},
+		{
+			"src": "/skills/discord-bot/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/discord-bot"
+			}
+		},
+		{
+			"src": "/skills/community",
+			"dest": "/skills/community/"
+		},
+		{
+			"src": "/skills/community/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/community"
+			}
+		},
+		{
+			"src": "/projects/portfolio-website",
+			"dest": "/projects/portfolio-website/"
+		},
+		{
+			"src": "/projects/portfolio-website/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/portfolio-website"
+			}
+		},
+		{
+			"src": "/skills/personal-project",
+			"dest": "/skills/personal-project/"
+		},
+		{
+			"src": "/skills/personal-project/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/personal-project"
+			}
+		},
+		{
+			"src": "/projects/breakfree",
+			"dest": "/projects/breakfree/"
+		},
+		{
+			"src": "/projects/breakfree/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/breakfree"
+			}
+		},
+		{
+			"src": "/skills/game-development",
+			"dest": "/skills/game-development/"
+		},
+		{
+			"src": "/skills/game-development/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/game-development"
+			}
+		},
+		{
+			"src": "/projects/pathbender-mobile",
+			"dest": "/projects/pathbender-mobile/"
+		},
+		{
+			"src": "/projects/pathbender-mobile/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/pathbender-mobile"
+			}
+		},
+		{
+			"src": "/projects/wisegenie",
+			"dest": "/projects/wisegenie/"
+		},
+		{
+			"src": "/projects/wisegenie/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/wisegenie"
+			}
+		},
+		{
+			"src": "/skills/nodejs",
+			"dest": "/skills/nodejs/"
+		},
+		{
+			"src": "/skills/nodejs/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/nodejs"
+			}
+		},
+		{
+			"src": "/projects/rpi-pico-controller",
+			"dest": "/projects/rpi-pico-controller/"
+		},
+		{
+			"src": "/projects/rpi-pico-controller/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/rpi-pico-controller"
+			}
+		},
+		{
+			"src": "/projects/openai-debugger",
+			"dest": "/projects/openai-debugger/"
+		},
+		{
+			"src": "/projects/openai-debugger/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/openai-debugger"
+			}
+		},
+		{
+			"src": "/skills/development-tools",
+			"dest": "/skills/development-tools/"
+		},
+		{
+			"src": "/skills/development-tools/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/development-tools"
+			}
+		},
+		{
+			"src": "/projects/pdf-reader-llm",
+			"dest": "/projects/pdf-reader-llm/"
+		},
+		{
+			"src": "/projects/pdf-reader-llm/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/pdf-reader-llm"
+			}
+		},
+		{
+			"src": "/projects/sachacks-discord-bot",
+			"dest": "/projects/sachacks-discord-bot/"
+		},
+		{
+			"src": "/projects/sachacks-discord-bot/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/sachacks-discord-bot"
+			}
+		},
+		{
+			"src": "/projects/posefinder",
+			"dest": "/projects/posefinder/"
+		},
+		{
+			"src": "/projects/posefinder/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/posefinder"
+			}
+		},
+		{
+			"src": "/projects/ocr-testing",
+			"dest": "/projects/ocr-testing/"
+		},
+		{
+			"src": "/projects/ocr-testing/",
+			"status": 308,
+			"headers": {
+				"Location": "/projects/ocr-testing"
+			}
+		},
+		{
+			"src": "/skills/testing-development",
+			"dest": "/skills/testing-development/"
+		},
+		{
+			"src": "/skills/testing-development/",
+			"status": 308,
+			"headers": {
+				"Location": "/skills/testing-development"
+			}
+		},
+		{
+			"src": "/_app/immutable/.+",
+			"headers": {
+				"cache-control": "public, immutable, max-age=31536000"
+			}
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/.*",
+			"dest": "/![-]/catchall"
+		}
+	],
+	"overrides": {
+		"index.html": {
+			"path": ""
+		},
+		"about.html": {
+			"path": "about"
+		},
+		"experience.html": {
+			"path": "experience"
+		},
+		"projects.html": {
+			"path": "projects"
+		},
+		"resume.html": {
+			"path": "resume"
+		},
+		"search.html": {
+			"path": "search"
+		},
+		"experience/gdsc-president.html": {
+			"path": "experience/gdsc-president"
+		},
+		"skills/flutter.html": {
+			"path": "skills/flutter"
+		},
+		"skills/dart.html": {
+			"path": "skills/dart"
+		},
+		"experience/sachacks-vp.html": {
+			"path": "experience/sachacks-vp"
+		},
+		"skills/python.html": {
+			"path": "skills/python"
+		},
+		"experience/swift-club-founder.html": {
+			"path": "experience/swift-club-founder"
+		},
+		"skills/swift.html": {
+			"path": "skills/swift"
+		},
+		"experience/ravata-engineer.html": {
+			"path": "experience/ravata-engineer"
+		},
+		"skills/c.html": {
+			"path": "skills/c"
+		},
+		"skills/cpp.html": {
+			"path": "skills/cpp"
+		},
+		"skills/csharp.html": {
+			"path": "skills/csharp"
+		},
+		"skills/embedded-systems.html": {
+			"path": "skills/embedded-systems"
+		},
+		"experience/resilientdb-researcher.html": {
+			"path": "experience/resilientdb-researcher"
+		},
+		"skills/blockchain.html": {
+			"path": "skills/blockchain"
+		},
+		"experience/research.html": {
+			"path": "experience/research"
+		},
+		"skills/js.html": {
+			"path": "skills/js"
+		},
+		"skills/css.html": {
+			"path": "skills/css"
+		},
+		"skills/html.html": {
+			"path": "skills/html"
+		},
+		"skills/reactjs.html": {
+			"path": "skills/reactjs"
+		},
+		"skills/firebase.html": {
+			"path": "skills/firebase"
+		},
+		"experience/tech-director.html": {
+			"path": "experience/tech-director"
+		},
+		"experience/orientation-leader.html": {
+			"path": "experience/orientation-leader"
+		},
+		"projects/synthiaai.html": {
+			"path": "projects/synthiaai"
+		},
+		"skills/ts.html": {
+			"path": "skills/ts"
+		},
+		"skills/flask.html": {
+			"path": "skills/flask"
+		},
+		"skills/web-application.html": {
+			"path": "skills/web-application"
+		},
+		"projects/secure-ir-security.html": {
+			"path": "projects/secure-ir-security"
+		},
+		"skills/iot.html": {
+			"path": "skills/iot"
+		},
+		"skills/security.html": {
+			"path": "skills/security"
+		},
+		"skills/cloud-integration.html": {
+			"path": "skills/cloud-integration"
+		},
+		"projects/crypgo.html": {
+			"path": "projects/crypgo"
+		},
+		"skills/reactnative.html": {
+			"path": "skills/reactnative"
+		},
+		"skills/mobile-application.html": {
+			"path": "skills/mobile-application"
+		},
+		"skills/open-source.html": {
+			"path": "skills/open-source"
+		},
+		"projects/autonomous-vehicle.html": {
+			"path": "projects/autonomous-vehicle"
+		},
+		"skills/computer-vision.html": {
+			"path": "skills/computer-vision"
+		},
+		"skills/hardware-design.html": {
+			"path": "skills/hardware-design"
+		},
+		"projects/khao.html": {
+			"path": "projects/khao"
+		},
+		"projects/ivf-embryo-system.html": {
+			"path": "projects/ivf-embryo-system"
+		},
+		"skills/matlab.html": {
+			"path": "skills/matlab"
+		},
+		"skills/medical-applications.html": {
+			"path": "skills/medical-applications"
+		},
+		"skills/data-analysis.html": {
+			"path": "skills/data-analysis"
+		},
+		"projects/audio-music-follower.html": {
+			"path": "projects/audio-music-follower"
+		},
+		"skills/signal-processing.html": {
+			"path": "skills/signal-processing"
+		},
+		"projects/education-mobile-app.html": {
+			"path": "projects/education-mobile-app"
+		},
+		"skills/sass.html": {
+			"path": "skills/sass"
+		},
+		"skills/education.html": {
+			"path": "skills/education"
+		},
+		"projects/chatasap.html": {
+			"path": "projects/chatasap"
+		},
+		"skills/real-time-communication.html": {
+			"path": "skills/real-time-communication"
+		},
+		"projects/discordbot.html": {
+			"path": "projects/discordbot"
+		},
+		"skills/discord-bot.html": {
+			"path": "skills/discord-bot"
+		},
+		"skills/community.html": {
+			"path": "skills/community"
+		},
+		"projects/portfolio-website.html": {
+			"path": "projects/portfolio-website"
+		},
+		"skills/personal-project.html": {
+			"path": "skills/personal-project"
+		},
+		"projects/breakfree.html": {
+			"path": "projects/breakfree"
+		},
+		"skills/game-development.html": {
+			"path": "skills/game-development"
+		},
+		"projects/pathbender-mobile.html": {
+			"path": "projects/pathbender-mobile"
+		},
+		"projects/wisegenie.html": {
+			"path": "projects/wisegenie"
+		},
+		"skills/nodejs.html": {
+			"path": "skills/nodejs"
+		},
+		"projects/rpi-pico-controller.html": {
+			"path": "projects/rpi-pico-controller"
+		},
+		"projects/openai-debugger.html": {
+			"path": "projects/openai-debugger"
+		},
+		"skills/development-tools.html": {
+			"path": "skills/development-tools"
+		},
+		"projects/pdf-reader-llm.html": {
+			"path": "projects/pdf-reader-llm"
+		},
+		"projects/sachacks-discord-bot.html": {
+			"path": "projects/sachacks-discord-bot"
+		},
+		"projects/posefinder.html": {
+			"path": "projects/posefinder"
+		},
+		"projects/ocr-testing.html": {
+			"path": "projects/ocr-testing"
+		},
+		"skills/testing-development.html": {
+			"path": "skills/testing-development"
+		}
+	}
+}

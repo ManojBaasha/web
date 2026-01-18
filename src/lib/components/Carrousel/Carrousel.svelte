@@ -16,8 +16,6 @@
 	import emotionstick from '$lib/assets/stick2.png';
 	import happystick from '$lib/assets/stick3.png';
 
-	export let items: Array<Skill> = [];
-
 	//make a struct of items with name and logo
 	const carouselItems = [
 		{

@@ -67,7 +67,6 @@
 	class={`card text-inherit decoration-none inline-flex flex-col border-1px border-solid border-[var(--border)] rounded-15px duration relative ${classes.join(
 		' '
 	)}`}
-	style:bgColor={'red'}
 >
 	<div class="card-bg-img flex-1 flex flex-col p-25px rounded-15px">
 		<slot />
@@ -88,7 +87,8 @@
 		--rot-x: 0;
 		--rot-y: 0;
 
-		background: linear-gradient(90deg, var(--main) 0%, var(--main) 60%, var(--main-60) 100%),
+		background:
+			linear-gradient(90deg, var(--main) 0%, var(--main) 60%, var(--main-60) 100%),
 			no-repeat right 40% / 40% var(--bg-img);
 
 		&-bg-img {

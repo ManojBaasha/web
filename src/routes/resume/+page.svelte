@@ -27,10 +27,6 @@
 		display: flex;
 		justify-content: center;
 		margin-top: 20px;
-
-		& > a {
-			color: inherit;
-		}
 	}
 
 	.resume-grid {
