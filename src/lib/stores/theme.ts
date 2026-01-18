@@ -23,13 +23,12 @@ export const toggleTheme = (value?: boolean) =>
 	});
 
 export const onHydrated = () => {
-    const fromStore = localStorage.getItem(key);
+	const fromStore = localStorage.getItem(key);
 
-    if (!fromStore) {
-        // No theme preference stored, default to dark mode
-        toggleTheme(true);
-    } else {
-        toggleTheme(JSON.parse(fromStore));
-    }
+	if (!fromStore) {
+		// No theme preference stored, default to dark mode
+		toggleTheme(true);
+	} else {
+		toggleTheme(JSON.parse(fromStore));
+	}
 };
-

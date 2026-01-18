@@ -86,14 +86,20 @@
 		// Function to generate a random floating image
 		const generateFloatingImage = () => {
 			const src = images[Math.floor(Math.random() * images.length)];
-			const direction = Math.random() < 0.3 ? 'diagonal' : 
-				['left', 'right', 'up', 'down'][Math.floor(Math.random() * 4)] as 'left' | 'right' | 'up' | 'down';
-			
+			const direction =
+				Math.random() < 0.3
+					? 'diagonal'
+					: (['left', 'right', 'up', 'down'][Math.floor(Math.random() * 4)] as
+							| 'left'
+							| 'right'
+							| 'up'
+							| 'down');
+
 			// Calculate starting position based on direction
 			let startX = 0;
 			let startY = 0;
 			let diagonalAngle = 0;
-			
+
 			switch (direction) {
 				case 'left':
 					startX = window.innerWidth;
@@ -111,7 +117,7 @@
 					startX = Math.random() * window.innerWidth;
 					startY = 0;
 					break;
-				case 'diagonal':
+				case 'diagonal': {
 					// Randomly choose which corner to start from
 					const corner = Math.floor(Math.random() * 4);
 					switch (corner) {
@@ -137,6 +143,7 @@
 							break;
 					}
 					break;
+				}
 			}
 
 			// Randomize size (smaller objects move faster)
@@ -148,22 +155,25 @@
 			const rotation = Math.random() * 360; // Random initial rotation
 			const rotationSpeed = (Math.random() - 0.5) * 2; // Random rotation speed (-1 to 1 degrees per second)
 
-			floatingImages = [...floatingImages, { 
-				src, 
-				startX, 
-				startY, 
-				duration, 
-				delay, 
-				size, 
-				direction,
-				rotation,
-				rotationSpeed,
-				diagonalAngle
-			}];
+			floatingImages = [
+				...floatingImages,
+				{
+					src,
+					startX,
+					startY,
+					duration,
+					delay,
+					size,
+					direction,
+					rotation,
+					rotationSpeed,
+					diagonalAngle
+				}
+			];
 
 			// Remove the image after it completes one animation cycle
 			setTimeout(() => {
-				floatingImages = floatingImages.filter(img => img.src !== src);
+				floatingImages = floatingImages.filter((img) => img.src !== src);
 			}, duration * 1000 + delay + 1000); // Add 1 second buffer for fade out
 		};
 
@@ -187,9 +197,9 @@
 </script>
 
 <div class="star-background">
-	<div bind:this={stars1} class="stars stars1"></div>
-	<div bind:this={stars2} class="stars stars2"></div>
-	<div bind:this={stars3} class="stars stars3"></div>
+	<div bind:this={stars1} class="stars stars1" />
+	<div bind:this={stars2} class="stars stars2" />
+	<div bind:this={stars3} class="stars stars3" />
 	{#each floatingImages as image}
 		<FloatingImage {...image} />
 	{/each}
@@ -202,7 +212,11 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: radial-gradient(ellipse at bottom, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+		background: radial-gradient(
+			ellipse at bottom,
+			var(--bg-gradient-start) 0%,
+			var(--bg-gradient-end) 100%
+		);
 		overflow: hidden;
 		z-index: -1;
 	}
@@ -216,7 +230,7 @@
 	}
 
 	.stars:after {
-		content: " ";
+		content: ' ';
 		position: absolute;
 		top: 2000px;
 		width: 1px;
@@ -252,12 +266,12 @@
 	}
 
 	:global(:root) {
-		--bg-gradient-start: #0A0F1A;
+		--bg-gradient-start: #0a0f1a;
 		--bg-gradient-end: #000000;
 	}
 
-	:global([data-theme="light"]) {
-		--bg-gradient-start: #F0F4F8;
-		--bg-gradient-end: #FFFFFF;
+	:global([data-theme='light']) {
+		--bg-gradient-start: #f0f4f8;
+		--bg-gradient-end: #ffffff;
 	}
-</style> 
+</style>

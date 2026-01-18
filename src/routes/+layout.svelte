@@ -4,7 +4,6 @@
 	import '$lib/index.scss';
 	import { onHydrated, theme } from '$lib/stores/theme';
 	import { onMount } from 'svelte';
-	import SpotifyNowPlaying from '$lib/components/SpotifyNowPlaying.svelte';
 	import StarBackground from '$lib/components/StarBackground/StarBackground.svelte';
 
 	export const prerender = true;
@@ -16,7 +15,6 @@
 	<StarBackground />
 	<NavMenu />
 	<div class="content container"><slot /></div>
-	<SpotifyNowPlaying />
 </div>
 
 <style lang="scss">

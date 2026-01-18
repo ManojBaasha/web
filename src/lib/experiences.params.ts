@@ -18,7 +18,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		contract: ContractType.PartTime,
 		type: 'President',
 		location: 'Davis, CA',
-		period: { from: new Date(2024, 8, 1) , to: new Date(2025, 8, 1) },
+		period: { from: new Date(2024, 8, 1), to: new Date(2025, 8, 1) },
 		skills: getSkills('react-native', 'ios', 'flutter', 'dart', 'leadership'),
 		name: 'President',
 		color: '#4285F4',
@@ -88,12 +88,16 @@ const MY_EXPERIENCES: Array<Experience> = [
 		contract: ContractType.Internship,
 		type: 'Open Source Blockchain Researcher',
 		location: 'Davis, CA',
-		period: { from: new Date(2023, 8, 1) , to: new Date(2024, 8, 1) },
+		period: { from: new Date(2023, 8, 1), to: new Date(2024, 8, 1) },
 		skills: getSkills('blockchain', 'ios', 'react-native', 'docker', 'linux', 'graphql'),
 		name: 'Open Source Blockchain Researcher',
 		color: '#00ff00',
 		links: [
-			{ to: 'https://blog.resilientdb.com/2023/12/17/CrypoGo.html', label: 'CrypGo Blog Post', newTab: true }
+			{
+				to: 'https://blog.resilientdb.com/2023/12/17/CrypoGo.html',
+				label: 'CrypGo Blog Post',
+				newTab: true
+			}
 		],
 		logo: resilientdb,
 		shortDescription: 'Blockchain Research and Development'

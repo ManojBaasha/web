@@ -101,4 +101,10 @@ export interface AboutPageParams extends BasePageParams {
 	title: 'About';
 }
 
-export type PageParams = HomePageParams | ProjectPageParams | ExperiencePageParams | ResumePageParams | AboutPageParams | SearchPageParams;
+export type PageParams =
+	| HomePageParams
+	| ProjectPageParams
+	| ExperiencePageParams
+	| ResumePageParams
+	| AboutPageParams
+	| SearchPageParams;

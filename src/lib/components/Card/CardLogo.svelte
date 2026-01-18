@@ -6,11 +6,14 @@
 	export let classes = '';
 </script>
 
-<div class={`rounded-${radius} ${classes} overflow-hidden`} style="width: {size}px; height: {size}px;">
-	<img 
-		class="w-full h-full object-contain" 
-		{src} 
-		{alt} 
+<div
+	class={`rounded-${radius} ${classes} overflow-hidden`}
+	style="width: {size}px; height: {size}px;"
+>
+	<img
+		class="w-full h-full object-contain"
+		{src}
+		{alt}
 		style="max-width: {size}px; max-height: {size}px;"
 	/>
 </div>

@@ -6,7 +6,7 @@ A modern, responsive portfolio website built with SvelteKit, TypeScript, and Uno
 
 - 🎨 Modern and responsive design
 - ⚡ Built with SvelteKit for optimal performance
-- 🎵 Spotify Now Playing integration
+
 - 📱 Mobile-first approach
 - 🎯 SEO optimized
 - 🎨 UnoCSS for utility-first styling
@@ -33,12 +33,14 @@ A modern, responsive portfolio website built with SvelteKit, TypeScript, and Uno
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/portfolio.git
 cd portfolio
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -46,14 +48,15 @@ yarn install
 ```
 
 3. Set up environment variables:
+
 ```bash
 cp .env.example .env
 ```
-Then edit `.env` with your Spotify API credentials (see [Spotify Setup Guide](SPOTIFY_SETUP.md))
 
 ### Development
 
 Start the development server:
+
 ```bash
 npm run dev
 # or
@@ -71,15 +74,12 @@ yarn build
 ```
 
 Preview the production build:
+
 ```bash
 npm run preview
 # or
 yarn preview
 ```
-
-## 🎵 Spotify Integration
-
-This portfolio includes a Spotify Now Playing widget that displays your currently playing track. To set this up, follow the instructions in [SPOTIFY_SETUP.md](SPOTIFY_SETUP.md).
 
 ## 🧰 Available Scripts
 

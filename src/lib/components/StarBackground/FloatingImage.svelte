@@ -61,23 +61,23 @@
 		transform: rotate(var(--rotation));
 	}
 
-	.floating-image[data-direction="left"] {
+	.floating-image[data-direction='left'] {
 		animation: float-left var(--duration) linear forwards;
 	}
 
-	.floating-image[data-direction="right"] {
+	.floating-image[data-direction='right'] {
 		animation: float-right var(--duration) linear forwards;
 	}
 
-	.floating-image[data-direction="up"] {
+	.floating-image[data-direction='up'] {
 		animation: float-up var(--duration) linear forwards;
 	}
 
-	.floating-image[data-direction="down"] {
+	.floating-image[data-direction='down'] {
 		animation: float-down var(--duration) linear forwards;
 	}
 
-	.floating-image[data-direction="diagonal"] {
+	.floating-image[data-direction='diagonal'] {
 		animation: float-diagonal var(--duration) linear forwards;
 	}
 
@@ -169,10 +169,11 @@
 		}
 		100% {
 			transform: translate(
-				calc(cos(var(--diagonal-angle)) * 150vw),
-				calc(sin(var(--diagonal-angle)) * 150vh)
-			) rotate(var(--rotation));
+					calc(cos(var(--diagonal-angle)) * 150vw),
+					calc(sin(var(--diagonal-angle)) * 150vh)
+				)
+				rotate(var(--rotation));
 			opacity: 0;
 		}
 	}
-</style> 
+</style>

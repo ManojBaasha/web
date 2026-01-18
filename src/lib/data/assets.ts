@@ -1,10 +1,12 @@
 import type { Asset } from '$lib/types';
 import { theme } from '$lib/stores/theme';
 
-const CDN_URL = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons";
+const CDN_URL = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons';
 
 const a = (name: string, extension: string, dark?: string): Asset =>
-	dark ? { dark: `${CDN_URL}/${name}/${dark}`, light: `${CDN_URL}/${name}/${name}-${extension}` } : `${CDN_URL}/${name}/${name}-${extension}`;
+	dark
+		? { dark: `${CDN_URL}/${name}/${dark}`, light: `${CDN_URL}/${name}/${name}-${extension}` }
+		: `${CDN_URL}/${name}/${name}-${extension}`;
 
 const Assets = {
 	// Core Languages

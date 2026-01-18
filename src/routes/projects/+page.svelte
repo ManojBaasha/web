@@ -7,7 +7,11 @@
 	import { onMount } from 'svelte';
 	import { MY_SKILLS } from '$lib/skills.params';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
-	import { CATEGORY_MAPPING, getSubCategories, getMainCategories } from '$lib/data/category-mapping';
+	import {
+		CATEGORY_MAPPING,
+		getSubCategories,
+		getMainCategories
+	} from '$lib/data/category-mapping';
 
 	interface SkillFilter extends Skill {
 		isSelected?: boolean;
@@ -89,24 +93,24 @@
 	<div class="projects-filters">
 		<div class="main-categories">
 			{#each getMainCategories() as category}
-				<Chip 
+				<Chip
 					active={selectedMainCategory === category}
 					classes={'text-0.8em'}
 					on:click={() => toggleMainCategory(category)}
 				>
-					{MY_SKILLS.find(s => s.slug === category)?.name || category}
+					{MY_SKILLS.find((s) => s.slug === category)?.name || category}
 				</Chip>
 			{/each}
 		</div>
 		{#if selectedMainCategory}
 			<div class="sub-categories">
 				{#each getSubCategories(selectedMainCategory) as skill}
-					<Chip 
+					<Chip
 						active={selectedSkills.has(skill)}
 						classes={'text-0.8em'}
 						on:click={() => toggleSkill(skill)}
 					>
-						{MY_SKILLS.find(s => s.slug === skill)?.name || skill}
+						{MY_SKILLS.find((s) => s.slug === skill)?.name || skill}
 					</Chip>
 				{/each}
 			</div>

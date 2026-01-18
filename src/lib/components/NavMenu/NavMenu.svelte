@@ -20,7 +20,7 @@
 		{ title: NavBar.about, to: '/about', icon: 'i-carbon-user-profile' },
 		{ title: NavBar.personal, to: '/projects', icon: 'i-carbon-cube' },
 		{ title: NavBar.career, to: '/experience', icon: 'i-carbon-development' },
-		{ title: NavBar.resume, to: '/resume', icon: 'i-carbon-result' },
+		{ title: NavBar.resume, to: '/resume', icon: 'i-carbon-result' }
 	];
 </script>
 
@@ -42,9 +42,12 @@
 			{/each}
 		</div>
 		<div class="flex flex-row flex-1 self-center justify-center">
-				<a href={`https://manojbaasha.github.io/blog/`} class="nav-menu-item !text-[var(--secondary-text)]">
-					<span class="nav-menu-item-label">Blog</span>
-				</a>
+			<a
+				href={`https://manojbaasha.github.io/blog/`}
+				class="nav-menu-item !text-[var(--secondary-text)]"
+			>
+				<span class="nav-menu-item-label">Blog</span>
+			</a>
 		</div>
 		<div class="flex flex-row self-stretch items-stretch gap-1 text-1.15em">
 			<a
